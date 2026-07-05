@@ -1,0 +1,18 @@
+{
+  "name": "abud-omniagent",
+  "private": true,
+  "scripts": {
+    "install:all": "npm install --include=dev && powershell -ExecutionPolicy Bypass -File scripts/install-backend.ps1 && powershell -ExecutionPolicy Bypass -File scripts/install-desktop.ps1",
+    "dev": "concurrently --names backend,desktop --prefix-colors blue,green \"npm run dev:backend\" \"npm run dev:desktop\"",
+    "test:backend": "apps\\backend\\.venv\\Scripts\\python.exe -m pytest apps/backend/tests",
+    "package:backend": "powershell -ExecutionPolicy Bypass -File scripts/package-backend.ps1",
+    "build:desktop": "npm --prefix apps/desktop run build",
+    "package:desktop": "npm run package:backend && npm --prefix apps/desktop run package",
+    "dev:desktop": "npm --prefix apps/desktop run dev",
+    "dev:backend": "cd apps/backend && .venv\\Scripts\\python.exe -m uvicorn main:app --reload --port 8000",
+    "health": "powershell -ExecutionPolicy Bypass -File scripts/health-check.ps1"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}

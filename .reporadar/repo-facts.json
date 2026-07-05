@@ -1,0 +1,4429 @@
+{
+  "metadata": {
+    "scannedAt": "2026-06-27T22:36:30.065Z",
+    "projectName": "abud-omniagent",
+    "rootPath": "C:\\Users\\Abud\\Desktop\\Abud OmniAgent",
+    "outputPath": "C:\\Users\\Abud\\Desktop\\Abud OmniAgent\\.reporadar",
+    "totalFilesScanned": 192,
+    "mainFolders": [
+      "apps",
+      "docs",
+      "scripts"
+    ],
+    "importantConfigFiles": [
+      "package.json",
+      "package-lock.json"
+    ],
+    "generatedFiles": [
+      "repo-facts.json",
+      "PROJECT_REPORT.md",
+      "ARCHITECTURE.md",
+      "TECH_STACK.md",
+      "SECURITY_NOTES.md",
+      "README_SUGGESTION.md",
+      "AI_AGENT_PROMPT.md",
+      "LINKEDIN_POST.md",
+      "PORTFOLIO_CASE_STUDY.md",
+      "FIX_PLAN.md",
+      "QUICK_WINS.md",
+      "GITHUB_ISSUES.md",
+      "AGENT_FIX_PROMPT.md"
+    ]
+  },
+  "config": {
+    "configDetected": false,
+    "configPath": null,
+    "configWarnings": [],
+    "appliedIncludePatterns": [],
+    "appliedExcludePatterns": [
+      ".reporadar",
+      ".reporadar/**"
+    ],
+    "outputDir": ".reporadar",
+    "maxFiles": 5000,
+    "maxFileSizeKb": 512,
+    "reports": {
+      "project": true,
+      "architecture": true,
+      "techStack": true,
+      "security": true,
+      "readme": true,
+      "agentPrompt": true,
+      "linkedin": true,
+      "portfolio": true,
+      "fixPlan": true,
+      "quickWins": true,
+      "githubIssues": true,
+      "agentFixPrompt": true
+    }
+  },
+  "scanSafety": {
+    "maxFiles": 5000,
+    "maxFileSizeKb": 512,
+    "skippedFiles": 76,
+    "skippedFolders": 20,
+    "skippedReasons": [
+      {
+        "reason": "unsupported text extension",
+        "count": 74
+      },
+      {
+        "reason": "default ignored folder",
+        "count": 20
+      },
+      {
+        "reason": "env file content intentionally skipped",
+        "count": 1
+      },
+      {
+        "reason": "file exceeds max size",
+        "count": 1
+      }
+    ],
+    "truncated": false
+  },
+  "detectedLanguages": [
+    {
+      "name": "Python",
+      "fileCount": 53
+    },
+    {
+      "name": "TypeScript",
+      "fileCount": 34
+    },
+    {
+      "name": "JSON",
+      "fileCount": 8
+    },
+    {
+      "name": "Markdown",
+      "fileCount": 8
+    },
+    {
+      "name": "HTML",
+      "fileCount": 2
+    },
+    {
+      "name": "CSS",
+      "fileCount": 1
+    },
+    {
+      "name": "JavaScript",
+      "fileCount": 1
+    }
+  ],
+  "detectedFrameworks": [
+    "FastAPI",
+    "React",
+    "React Router",
+    "Vite"
+  ],
+  "packageManager": "npm",
+  "projectType": "full-stack-app",
+  "monorepo": {
+    "isMonorepo": true,
+    "workspaceManager": null,
+    "workspaceGlobs": [],
+    "detectedApps": [
+      "apps/backend",
+      "apps/desktop"
+    ],
+    "detectedPackages": [],
+    "detectedServices": [],
+    "detectedLibraries": [],
+    "monorepoTools": [],
+    "monorepoNotes": [
+      "This repository appears to use a multi-package or multi-application layout.",
+      "Detected apps: apps/backend, apps/desktop."
+    ],
+    "packageGraph": {
+      "relationships": [],
+      "orphanPackages": [
+        "abud-omniagent-desktop"
+      ],
+      "sharedPackages": []
+    }
+  },
+  "ecosystems": {
+    "primary": [
+      "Node.js",
+      "Python"
+    ],
+    "python": {
+      "detected": true,
+      "packageFiles": [],
+      "dependencyFiles": [],
+      "frameworks": [
+        "FastAPI"
+      ],
+      "testingTools": [
+        "Pytest"
+      ],
+      "usesSrcLayout": false,
+      "hasPytestConfig": false
+    }
+  },
+  "deployment": {
+    "tools": [],
+    "configFiles": [],
+    "platforms": [],
+    "hasDockerfile": false,
+    "hasDockerCompose": false,
+    "hasDockerIgnore": false,
+    "hasNginxConfig": false,
+    "hasPm2Config": false,
+    "notes": [
+      "No deployment tooling was detected by the current heuristics."
+    ]
+  },
+  "ci": {
+    "providers": [],
+    "workflowFiles": []
+  },
+  "packageSummary": {
+    "hasRootPackageJson": true,
+    "hasRootPyprojectToml": false,
+    "hasRequirementsTxt": false,
+    "hasSetupPy": false,
+    "hasSetupCfg": false,
+    "hasPipfile": false,
+    "hasPoetryLock": false,
+    "hasRootLockfile": true,
+    "workspacePackageCount": 1,
+    "appCount": 2,
+    "packageCount": 0,
+    "serviceCount": 0,
+    "libraryCount": 0,
+    "hasSharedConfigPackage": false
+  },
+  "architecture": {
+    "entrypoints": [
+      {
+        "file": "apps/backend/api/actions.py",
+        "kind": "streamlit-app",
+        "reason": "Streamlit app hints detected in file.",
+        "confidence": 0.75
+      },
+      {
+        "file": "apps/backend/api/agent.py",
+        "kind": "streamlit-app",
+        "reason": "Streamlit app hints detected in file.",
+        "confidence": 0.75
+      },
+      {
+        "file": "apps/backend/api/models.py",
+        "kind": "streamlit-app",
+        "reason": "Streamlit app hints detected in file.",
+        "confidence": 0.75
+      },
+      {
+        "file": "apps/backend/api/workspace.py",
+        "kind": "streamlit-app",
+        "reason": "Streamlit app hints detected in file.",
+        "confidence": 0.75
+      },
+      {
+        "file": "apps/backend/main.py",
+        "kind": "fastapi-app",
+        "reason": "FastAPI app instance detected in file.",
+        "confidence": 0.9
+      },
+      {
+        "file": "apps/backend/model_router/router.py",
+        "kind": "streamlit-app",
+        "reason": "Streamlit app hints detected in file.",
+        "confidence": 0.75
+      },
+      {
+        "file": "apps/backend/storage/db.py",
+        "kind": "streamlit-app",
+        "reason": "Streamlit app hints detected in file.",
+        "confidence": 0.75
+      },
+      {
+        "file": "apps/backend/tests/test_actions_phase2a.py",
+        "kind": "streamlit-app",
+        "reason": "Streamlit app hints detected in file.",
+        "confidence": 0.75
+      },
+      {
+        "file": "apps/backend/tests/test_agent_phase1c.py",
+        "kind": "streamlit-app",
+        "reason": "Streamlit app hints detected in file.",
+        "confidence": 0.75
+      },
+      {
+        "file": "apps/backend/tests/test_context.py",
+        "kind": "streamlit-app",
+        "reason": "Streamlit app hints detected in file.",
+        "confidence": 0.75
+      },
+      {
+        "file": "apps/backend/tests/test_health.py",
+        "kind": "streamlit-app",
+        "reason": "Streamlit app hints detected in file.",
+        "confidence": 0.75
+      },
+      {
+        "file": "apps/backend/tests/test_models_phase1c.py",
+        "kind": "streamlit-app",
+        "reason": "Streamlit app hints detected in file.",
+        "confidence": 0.75
+      },
+      {
+        "file": "apps/backend/tests/test_provider_settings_phase1f.py",
+        "kind": "streamlit-app",
+        "reason": "Streamlit app hints detected in file.",
+        "confidence": 0.75
+      },
+      {
+        "file": "apps/backend/tests/test_router_phase1c.py",
+        "kind": "streamlit-app",
+        "reason": "Streamlit app hints detected in file.",
+        "confidence": 0.75
+      },
+      {
+        "file": "apps/backend/tests/test_workspace.py",
+        "kind": "streamlit-app",
+        "reason": "Streamlit app hints detected in file.",
+        "confidence": 0.75
+      }
+    ],
+    "routes": [
+      {
+        "method": "POST",
+        "path": "/actions/preview",
+        "file": "apps/backend/api/actions.py",
+        "source": "FastAPI",
+        "confidence": 0.95
+      },
+      {
+        "method": "POST",
+        "path": "/actions/confirm",
+        "file": "apps/backend/api/actions.py",
+        "source": "FastAPI",
+        "confidence": 0.95
+      },
+      {
+        "method": "POST",
+        "path": "/actions/copy",
+        "file": "apps/backend/api/actions.py",
+        "source": "FastAPI",
+        "confidence": 0.95
+      },
+      {
+        "method": "POST",
+        "path": "/actions/paste-preview",
+        "file": "apps/backend/api/actions.py",
+        "source": "FastAPI",
+        "confidence": 0.95
+      },
+      {
+        "method": "GET",
+        "path": "/actions/logs",
+        "file": "apps/backend/api/actions.py",
+        "source": "FastAPI",
+        "confidence": 0.95
+      },
+      {
+        "method": "POST",
+        "path": "/agent/run",
+        "file": "apps/backend/api/agent.py",
+        "source": "FastAPI",
+        "confidence": 0.95
+      },
+      {
+        "method": "POST",
+        "path": "/agent/selected-input",
+        "file": "apps/backend/api/agent.py",
+        "source": "FastAPI",
+        "confidence": 0.95
+      },
+      {
+        "method": "GET",
+        "path": "/context/current",
+        "file": "apps/backend/api/context.py",
+        "source": "FastAPI",
+        "confidence": 0.95
+      },
+      {
+        "method": "GET",
+        "path": "/health",
+        "file": "apps/backend/api/health.py",
+        "source": "FastAPI",
+        "confidence": 0.95
+      },
+      {
+        "method": "GET",
+        "path": "/logs",
+        "file": "apps/backend/api/logs.py",
+        "source": "FastAPI",
+        "confidence": 0.95
+      },
+      {
+        "method": "GET",
+        "path": "/models/settings",
+        "file": "apps/backend/api/models.py",
+        "source": "FastAPI",
+        "confidence": 0.95
+      },
+      {
+        "method": "GET",
+        "path": "/models/providers",
+        "file": "apps/backend/api/models.py",
+        "source": "FastAPI",
+        "confidence": 0.95
+      },
+      {
+        "method": "GET",
+        "path": "/models/diagnostics",
+        "file": "apps/backend/api/models.py",
+        "source": "FastAPI",
+        "confidence": 0.95
+      },
+      {
+        "method": "POST",
+        "path": "/models/settings",
+        "file": "apps/backend/api/models.py",
+        "source": "FastAPI",
+        "confidence": 0.95
+      },
+      {
+        "method": "POST",
+        "path": "/models/test",
+        "file": "apps/backend/api/models.py",
+        "source": "FastAPI",
+        "confidence": 0.95
+      },
+      {
+        "method": "GET",
+        "path": "/workspace/notes",
+        "file": "apps/backend/api/workspace.py",
+        "source": "FastAPI",
+        "confidence": 0.95
+      },
+      {
+        "method": "POST",
+        "path": "/workspace/notes",
+        "file": "apps/backend/api/workspace.py",
+        "source": "FastAPI",
+        "confidence": 0.95
+      },
+      {
+        "method": "PATCH",
+        "path": "/workspace/notes/{item_id}",
+        "file": "apps/backend/api/workspace.py",
+        "source": "FastAPI",
+        "confidence": 0.95
+      },
+      {
+        "method": "POST",
+        "path": "/workspace/notes/{item_id}/pin",
+        "file": "apps/backend/api/workspace.py",
+        "source": "FastAPI",
+        "confidence": 0.95
+      },
+      {
+        "method": "POST",
+        "path": "/workspace/notes/{item_id}/archive",
+        "file": "apps/backend/api/workspace.py",
+        "source": "FastAPI",
+        "confidence": 0.95
+      },
+      {
+        "method": "GET",
+        "path": "/workspace/tasks",
+        "file": "apps/backend/api/workspace.py",
+        "source": "FastAPI",
+        "confidence": 0.95
+      },
+      {
+        "method": "POST",
+        "path": "/workspace/tasks",
+        "file": "apps/backend/api/workspace.py",
+        "source": "FastAPI",
+        "confidence": 0.95
+      },
+      {
+        "method": "PATCH",
+        "path": "/workspace/tasks/{item_id}",
+        "file": "apps/backend/api/workspace.py",
+        "source": "FastAPI",
+        "confidence": 0.95
+      },
+      {
+        "method": "POST",
+        "path": "/workspace/tasks/{item_id}/pin",
+        "file": "apps/backend/api/workspace.py",
+        "source": "FastAPI",
+        "confidence": 0.95
+      },
+      {
+        "method": "POST",
+        "path": "/workspace/tasks/{item_id}/archive",
+        "file": "apps/backend/api/workspace.py",
+        "source": "FastAPI",
+        "confidence": 0.95
+      },
+      {
+        "method": "GET",
+        "path": "/workspace/results",
+        "file": "apps/backend/api/workspace.py",
+        "source": "FastAPI",
+        "confidence": 0.95
+      },
+      {
+        "method": "POST",
+        "path": "/workspace/results",
+        "file": "apps/backend/api/workspace.py",
+        "source": "FastAPI",
+        "confidence": 0.95
+      },
+      {
+        "method": "POST",
+        "path": "/workspace/results/{item_id}/pin",
+        "file": "apps/backend/api/workspace.py",
+        "source": "FastAPI",
+        "confidence": 0.95
+      },
+      {
+        "method": "POST",
+        "path": "/workspace/results/{item_id}/archive",
+        "file": "apps/backend/api/workspace.py",
+        "source": "FastAPI",
+        "confidence": 0.95
+      },
+      {
+        "method": "GET",
+        "path": "/workspace/search",
+        "file": "apps/backend/api/workspace.py",
+        "source": "FastAPI",
+        "confidence": 0.95
+      },
+      {
+        "method": null,
+        "path": "/",
+        "file": "apps/desktop/src/App.tsx",
+        "source": "React Router JSX",
+        "confidence": 0.8
+      },
+      {
+        "method": null,
+        "path": "/services",
+        "file": "apps/desktop/src/App.tsx",
+        "source": "React Router JSX",
+        "confidence": 0.8
+      },
+      {
+        "method": null,
+        "path": "/workspace",
+        "file": "apps/desktop/src/App.tsx",
+        "source": "React Router JSX",
+        "confidence": 0.8
+      },
+      {
+        "method": null,
+        "path": "/settings",
+        "file": "apps/desktop/src/App.tsx",
+        "source": "React Router JSX",
+        "confidence": 0.8
+      },
+      {
+        "method": null,
+        "path": "/logs",
+        "file": "apps/desktop/src/App.tsx",
+        "source": "React Router JSX",
+        "confidence": 0.8
+      },
+      {
+        "method": null,
+        "path": "/help",
+        "file": "apps/desktop/src/App.tsx",
+        "source": "React Router JSX",
+        "confidence": 0.8
+      }
+    ],
+    "imports": [
+      {
+        "file": "apps/backend/actions/clipboard_actions.py",
+        "target": "actions.executor",
+        "kind": "python-from-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/actions/executor.py",
+        "target": "ctypes\nimport time\nfrom typing import Callable\n\nimport pyperclip\n\nfrom config import settings\n\n\ndef _default_send_paste_shortcut",
+        "kind": "python-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/actions/executor.py",
+        "target": "__future__",
+        "kind": "python-from-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/actions/executor.py",
+        "target": "typing",
+        "kind": "python-from-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/actions/executor.py",
+        "target": "config",
+        "kind": "python-from-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/actions/paste_actions.py",
+        "target": "config",
+        "kind": "python-from-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/actions/safety.py",
+        "target": "re\nimport uuid\nfrom datetime import datetime",
+        "kind": "python-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/actions/safety.py",
+        "target": "timezone\nfrom typing import Any\n\nfrom config import settings\n\n\nRISK_LEVELS",
+        "kind": "python-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/actions/safety.py",
+        "target": "__future__",
+        "kind": "python-from-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/actions/safety.py",
+        "target": "datetime",
+        "kind": "python-from-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/actions/safety.py",
+        "target": "typing",
+        "kind": "python-from-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/actions/safety.py",
+        "target": "config",
+        "kind": "python-from-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/actions/store.py",
+        "target": "json\nfrom datetime import datetime",
+        "kind": "python-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/actions/store.py",
+        "target": "timezone\nfrom typing import Any\n\nimport aiosqlite\n\nfrom config import settings\nfrom storage.db import DB_PATH",
+        "kind": "python-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/actions/store.py",
+        "target": "__future__",
+        "kind": "python-from-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/actions/store.py",
+        "target": "datetime",
+        "kind": "python-from-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/actions/store.py",
+        "target": "typing",
+        "kind": "python-from-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/actions/store.py",
+        "target": "config",
+        "kind": "python-from-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/actions/store.py",
+        "target": "storage.db",
+        "kind": "python-from-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/agent/planner.py",
+        "target": "re\n\nUNSAFE_PATTERNS",
+        "kind": "python-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/agent/planner.py",
+        "target": "__future__",
+        "kind": "python-from-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/agent/prompts.py",
+        "target": "__future__",
+        "kind": "python-from-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/agent/prompts.py",
+        "target": "context_engine.context_builder",
+        "kind": "python-from-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/api/actions.py",
+        "target": "__future__",
+        "kind": "python-from-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/api/actions.py",
+        "target": "datetime",
+        "kind": "python-from-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/api/actions.py",
+        "target": "fastapi",
+        "kind": "python-from-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/api/actions.py",
+        "target": "pydantic",
+        "kind": "python-from-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/api/actions.py",
+        "target": "actions.executor",
+        "kind": "python-from-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/api/actions.py",
+        "target": "actions.safety",
+        "kind": "python-from-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/api/actions.py",
+        "target": "actions.store",
+        "kind": "python-from-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/api/actions.py",
+        "target": "config",
+        "kind": "python-from-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/api/agent.py",
+        "target": "datetime",
+        "kind": "python-from-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/api/agent.py",
+        "target": "pathlib",
+        "kind": "python-from-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/api/agent.py",
+        "target": "typing",
+        "kind": "python-from-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/api/agent.py",
+        "target": "fastapi",
+        "kind": "python-from-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/api/agent.py",
+        "target": "pydantic",
+        "kind": "python-from-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/api/agent.py",
+        "target": "agent.planner",
+        "kind": "python-from-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/api/agent.py",
+        "target": "agent.prompts",
+        "kind": "python-from-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/api/agent.py",
+        "target": "config",
+        "kind": "python-from-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/api/agent.py",
+        "target": "context_engine.context_builder",
+        "kind": "python-from-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/api/agent.py",
+        "target": "model_router.router",
+        "kind": "python-from-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/api/context.py",
+        "target": "fastapi",
+        "kind": "python-from-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/api/context.py",
+        "target": "context_engine.context_builder",
+        "kind": "python-from-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/api/health.py",
+        "target": "datetime",
+        "kind": "python-from-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/api/health.py",
+        "target": "fastapi",
+        "kind": "python-from-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/api/health.py",
+        "target": "config",
+        "kind": "python-from-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/api/logs.py",
+        "target": "datetime",
+        "kind": "python-from-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/api/logs.py",
+        "target": "fastapi",
+        "kind": "python-from-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/api/logs.py",
+        "target": "actions.store",
+        "kind": "python-from-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/api/models.py",
+        "target": "fastapi",
+        "kind": "python-from-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/api/models.py",
+        "target": "pydantic",
+        "kind": "python-from-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/api/models.py",
+        "target": "core.provider_settings",
+        "kind": "python-from-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/api/models.py",
+        "target": "model_router.router",
+        "kind": "python-from-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/api/workspace.py",
+        "target": "__future__",
+        "kind": "python-from-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/api/workspace.py",
+        "target": "typing",
+        "kind": "python-from-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/api/workspace.py",
+        "target": "fastapi",
+        "kind": "python-from-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/api/workspace.py",
+        "target": "pydantic",
+        "kind": "python-from-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/api/workspace.py",
+        "target": "workspace.store",
+        "kind": "python-from-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/config.py",
+        "target": "os\nfrom dotenv import load_dotenv\n\nload_dotenv",
+        "kind": "python-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/config.py",
+        "target": "dotenv",
+        "kind": "python-from-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/context_engine/active_window.py",
+        "target": "ctypes\nimport os\nimport sys\nfrom ctypes import wintypes\nfrom pathlib import Path\n\nPROCESS_QUERY_LIMITED_INFORMATION",
+        "kind": "python-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/context_engine/active_window.py",
+        "target": "__future__",
+        "kind": "python-from-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/context_engine/active_window.py",
+        "target": "ctypes",
+        "kind": "python-from-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/context_engine/active_window.py",
+        "target": "pathlib",
+        "kind": "python-from-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/context_engine/clipboard.py",
+        "target": "ctypes\nimport os\nimport sys\nimport time\nfrom ctypes import wintypes\nfrom dataclasses import dataclass",
+        "kind": "python-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/context_engine/clipboard.py",
+        "target": "field\n\nCF_UNICODETEXT",
+        "kind": "python-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/context_engine/clipboard.py",
+        "target": "__future__",
+        "kind": "python-from-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/context_engine/clipboard.py",
+        "target": "ctypes",
+        "kind": "python-from-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/context_engine/clipboard.py",
+        "target": "dataclasses",
+        "kind": "python-from-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/context_engine/context_builder.py",
+        "target": "re\n\nfrom config import settings\nfrom context_engine.active_window import get_active_window\nfrom context_engine.clipboard import ClipboardSnapshot",
+        "kind": "python-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/context_engine/context_builder.py",
+        "target": "get_clipboard_snapshot\nfrom context_engine.screenshot import capture_screenshot_metadata\nfrom context_engine.selected_text import get_selected_text\n\n\ndef _truncate_preview",
+        "kind": "python-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/context_engine/context_builder.py",
+        "target": "__future__",
+        "kind": "python-from-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/context_engine/context_builder.py",
+        "target": "datetime",
+        "kind": "python-from-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/context_engine/context_builder.py",
+        "target": "config",
+        "kind": "python-from-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/context_engine/context_builder.py",
+        "target": "context_engine.active_window",
+        "kind": "python-from-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/context_engine/context_builder.py",
+        "target": "context_engine.clipboard",
+        "kind": "python-from-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/context_engine/context_builder.py",
+        "target": "context_engine.screenshot",
+        "kind": "python-from-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/context_engine/context_builder.py",
+        "target": "context_engine.selected_text",
+        "kind": "python-from-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/context_engine/screenshot.py",
+        "target": "os\nimport tempfile\nimport uuid\n\nfrom config import settings\n\ntry",
+        "kind": "python-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/context_engine/screenshot.py",
+        "target": "__future__",
+        "kind": "python-from-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/context_engine/screenshot.py",
+        "target": "datetime",
+        "kind": "python-from-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/context_engine/screenshot.py",
+        "target": "config",
+        "kind": "python-from-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/context_engine/screenshot.py",
+        "target": "PIL",
+        "kind": "python-from-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/context_engine/selected_text.py",
+        "target": "ctypes\nimport os\nimport sys\nimport time\nfrom typing import Callable\n\nfrom config import settings\nfrom context_engine.active_window import get_active_window\nfrom context_engine.clipboard import ClipboardSnapshot",
+        "kind": "python-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/context_engine/selected_text.py",
+        "target": "clear_clipboard",
+        "kind": "python-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/context_engine/selected_text.py",
+        "target": "get_clipboard_snapshot",
+        "kind": "python-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/context_engine/selected_text.py",
+        "target": "set_clipboard_text\n\nVK_CONTROL",
+        "kind": "python-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/context_engine/selected_text.py",
+        "target": "__future__",
+        "kind": "python-from-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/context_engine/selected_text.py",
+        "target": "typing",
+        "kind": "python-from-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/context_engine/selected_text.py",
+        "target": "config",
+        "kind": "python-from-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/context_engine/selected_text.py",
+        "target": "context_engine.active_window",
+        "kind": "python-from-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/context_engine/selected_text.py",
+        "target": "context_engine.clipboard",
+        "kind": "python-from-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/core/provider_settings.py",
+        "target": "json\nimport re\nfrom typing import Any\nfrom urllib.parse import urlsplit\n\nfrom config import settings\n\n\nVALID_PROVIDER_IDS",
+        "kind": "python-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/core/provider_settings.py",
+        "target": "__future__",
+        "kind": "python-from-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/core/provider_settings.py",
+        "target": "pathlib",
+        "kind": "python-from-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/core/provider_settings.py",
+        "target": "typing",
+        "kind": "python-from-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/core/provider_settings.py",
+        "target": "urllib.parse",
+        "kind": "python-from-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/core/provider_settings.py",
+        "target": "config",
+        "kind": "python-from-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/core/provider_tests.py",
+        "target": "json\nfrom typing import Any",
+        "kind": "python-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/core/provider_tests.py",
+        "target": "Dict",
+        "kind": "python-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/core/provider_tests.py",
+        "target": "List\n\nfrom config import settings\n\nALLOWED_LAST_TEST_FIELDS",
+        "kind": "python-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/core/provider_tests.py",
+        "target": "__future__",
+        "kind": "python-from-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/core/provider_tests.py",
+        "target": "pathlib",
+        "kind": "python-from-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/core/provider_tests.py",
+        "target": "typing",
+        "kind": "python-from-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/core/provider_tests.py",
+        "target": "config",
+        "kind": "python-from-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/desktop_runtime.py",
+        "target": "os\n\nimport uvicorn\n\nfrom main import app\n\n\ndef main",
+        "kind": "python-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/desktop_runtime.py",
+        "target": "__future__",
+        "kind": "python-from-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/desktop_runtime.py",
+        "target": "main",
+        "kind": "python-from-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/main.py",
+        "target": "contextlib",
+        "kind": "python-from-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/main.py",
+        "target": "fastapi",
+        "kind": "python-from-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/main.py",
+        "target": "fastapi.middleware.cors",
+        "kind": "python-from-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/main.py",
+        "target": "config",
+        "kind": "python-from-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/main.py",
+        "target": "storage.db",
+        "kind": "python-from-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/main.py",
+        "target": "api.health",
+        "kind": "python-from-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/main.py",
+        "target": "api.context",
+        "kind": "python-from-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/main.py",
+        "target": "api.agent",
+        "kind": "python-from-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/main.py",
+        "target": "api.models",
+        "kind": "python-from-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/main.py",
+        "target": "api.actions",
+        "kind": "python-from-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/main.py",
+        "target": "api.logs",
+        "kind": "python-from-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/main.py",
+        "target": "api.workspace",
+        "kind": "python-from-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/model_router/base.py",
+        "target": "re\nimport time\nfrom urllib.parse import urlsplit",
+        "kind": "python-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/model_router/base.py",
+        "target": "urlunsplit\n\nimport httpx\n\n\n_SECRET_PATTERNS",
+        "kind": "python-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/model_router/base.py",
+        "target": "__future__",
+        "kind": "python-from-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/model_router/base.py",
+        "target": "abc",
+        "kind": "python-from-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/model_router/base.py",
+        "target": "dataclasses",
+        "kind": "python-from-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/model_router/base.py",
+        "target": "urllib.parse",
+        "kind": "python-from-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/model_router/lmstudio_provider.py",
+        "target": "__future__",
+        "kind": "python-from-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/model_router/lmstudio_provider.py",
+        "target": ".openai_compatible_provider",
+        "kind": "python-from-import",
+        "internal": true,
+        "resolvedTarget": "apps/backend/model_router/openai_compatible_provider.py",
+        "resolutionKind": "python-relative"
+      },
+      {
+        "file": "apps/backend/model_router/ollama_provider.py",
+        "target": "time\n\nimport httpx\n\nfrom .base import BaseProvider",
+        "kind": "python-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/model_router/ollama_provider.py",
+        "target": "normalize_model_identifiers\n\n\nclass OllamaProvider",
+        "kind": "python-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/model_router/ollama_provider.py",
+        "target": "__future__",
+        "kind": "python-from-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/model_router/ollama_provider.py",
+        "target": ".base",
+        "kind": "python-from-import",
+        "internal": true,
+        "resolvedTarget": "apps/backend/model_router/base.py",
+        "resolutionKind": "python-relative"
+      },
+      {
+        "file": "apps/backend/model_router/openai_compatible_provider.py",
+        "target": "os\nimport time\n\nimport httpx\n\nfrom .base import BaseProvider",
+        "kind": "python-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/model_router/openai_compatible_provider.py",
+        "target": "normalize_model_identifiers\n\n\nclass OpenAICompatibleProvider",
+        "kind": "python-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/model_router/openai_compatible_provider.py",
+        "target": "__future__",
+        "kind": "python-from-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/model_router/openai_compatible_provider.py",
+        "target": ".base",
+        "kind": "python-from-import",
+        "internal": true,
+        "resolvedTarget": "apps/backend/model_router/base.py",
+        "resolutionKind": "python-relative"
+      },
+      {
+        "file": "apps/backend/model_router/router.py",
+        "target": "asyncio\nfrom datetime import datetime",
+        "kind": "python-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/model_router/router.py",
+        "target": "timezone\nimport httpx\n\nfrom core.provider_settings import get_effective_model",
+        "kind": "python-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/model_router/router.py",
+        "target": "load_provider_settings\nfrom core import provider_tests as provider_tests_module\nfrom .base import sanitize_base_url",
+        "kind": "python-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/model_router/router.py",
+        "target": "sanitize_error_message\nfrom .lmstudio_provider import LMStudioProvider\nfrom .ollama_provider import OllamaProvider\nfrom .openai_compatible_provider import OpenAICompatibleProvider\n\n\nDEFAULT_TEST_PROMPT",
+        "kind": "python-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/model_router/router.py",
+        "target": "__future__",
+        "kind": "python-from-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/model_router/router.py",
+        "target": "datetime",
+        "kind": "python-from-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/model_router/router.py",
+        "target": "core.provider_settings",
+        "kind": "python-from-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/model_router/router.py",
+        "target": "core",
+        "kind": "python-from-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/model_router/router.py",
+        "target": ".base",
+        "kind": "python-from-import",
+        "internal": true,
+        "resolvedTarget": "apps/backend/model_router/base.py",
+        "resolutionKind": "python-relative"
+      },
+      {
+        "file": "apps/backend/model_router/router.py",
+        "target": ".lmstudio_provider",
+        "kind": "python-from-import",
+        "internal": true,
+        "resolvedTarget": "apps/backend/model_router/lmstudio_provider.py",
+        "resolutionKind": "python-relative"
+      },
+      {
+        "file": "apps/backend/model_router/router.py",
+        "target": ".ollama_provider",
+        "kind": "python-from-import",
+        "internal": true,
+        "resolvedTarget": "apps/backend/model_router/ollama_provider.py",
+        "resolutionKind": "python-relative"
+      },
+      {
+        "file": "apps/backend/model_router/router.py",
+        "target": ".openai_compatible_provider",
+        "kind": "python-from-import",
+        "internal": true,
+        "resolvedTarget": "apps/backend/model_router/openai_compatible_provider.py",
+        "resolutionKind": "python-relative"
+      },
+      {
+        "file": "apps/backend/safety/action_schema.py",
+        "target": "enum",
+        "kind": "python-from-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/storage/db.py",
+        "target": "aiosqlite\nimport os\n\nDB_PATH",
+        "kind": "python-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/tests/test_actions_phase2a.py",
+        "target": "asyncio\nfrom typing import Any\n\nfrom httpx import ASGITransport",
+        "kind": "python-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/tests/test_actions_phase2a.py",
+        "target": "AsyncClient\nimport pytest\nimport pytest_asyncio\n\nfrom api import actions as actions_api\nfrom main import app\n\n\nasync def _noop_log",
+        "kind": "python-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/tests/test_actions_phase2a.py",
+        "target": "__future__",
+        "kind": "python-from-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/tests/test_actions_phase2a.py",
+        "target": "typing",
+        "kind": "python-from-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/tests/test_actions_phase2a.py",
+        "target": "httpx",
+        "kind": "python-from-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/tests/test_actions_phase2a.py",
+        "target": "api",
+        "kind": "python-from-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/tests/test_actions_phase2a.py",
+        "target": "main",
+        "kind": "python-from-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/tests/test_actions_phase2a.py",
+        "target": "actions",
+        "kind": "python-from-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/tests/test_agent_phase1c.py",
+        "target": "pytest\n\nfrom api import agent as agent_api\nfrom main import app",
+        "kind": "python-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/tests/test_agent_phase1c.py",
+        "target": "httpx",
+        "kind": "python-from-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/tests/test_agent_phase1c.py",
+        "target": "api",
+        "kind": "python-from-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/tests/test_agent_phase1c.py",
+        "target": "main",
+        "kind": "python-from-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/tests/test_context.py",
+        "target": "pytest\n\nfrom context_engine import active_window",
+        "kind": "python-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/tests/test_context.py",
+        "target": "context_builder",
+        "kind": "python-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/tests/test_context.py",
+        "target": "screenshot",
+        "kind": "python-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/tests/test_context.py",
+        "target": "selected_text\nfrom context_engine.clipboard import ClipboardSnapshot\nfrom main import app",
+        "kind": "python-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/tests/test_context.py",
+        "target": "httpx",
+        "kind": "python-from-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/tests/test_context.py",
+        "target": "context_engine",
+        "kind": "python-from-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/tests/test_context.py",
+        "target": "context_engine.clipboard",
+        "kind": "python-from-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/tests/test_context.py",
+        "target": "main",
+        "kind": "python-from-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/tests/test_health.py",
+        "target": "pytest\nfrom httpx import AsyncClient",
+        "kind": "python-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/tests/test_health.py",
+        "target": "ASGITransport\nfrom main import app",
+        "kind": "python-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/tests/test_health.py",
+        "target": "httpx",
+        "kind": "python-from-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/tests/test_health.py",
+        "target": "main",
+        "kind": "python-from-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/tests/test_models_phase1c.py",
+        "target": "pytest\n\nfrom api import models as models_api\nfrom main import app\nfrom model_router import router as router_module\nfrom core import provider_tests as provider_tests_module\n\n\ndef build_provider_settings",
+        "kind": "python-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/tests/test_models_phase1c.py",
+        "target": "httpx",
+        "kind": "python-from-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/tests/test_models_phase1c.py",
+        "target": "api",
+        "kind": "python-from-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/tests/test_models_phase1c.py",
+        "target": "main",
+        "kind": "python-from-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/tests/test_models_phase1c.py",
+        "target": "model_router",
+        "kind": "python-from-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/tests/test_models_phase1c.py",
+        "target": "core",
+        "kind": "python-from-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/tests/test_prompt_phase1c.py",
+        "target": "pytest\n\nfrom agent.prompts import build_prompt\n\n\ndef test_prompt_truncation_and_redaction_work",
+        "kind": "python-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/tests/test_prompt_phase1c.py",
+        "target": "agent.prompts",
+        "kind": "python-from-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/tests/test_provider_settings_phase1f.py",
+        "target": "pytest\n\nfrom config import settings\nfrom core import provider_settings as provider_settings_module\nfrom model_router.base import normalize_model_identifiers\n\n\ndef test_normalize_model_identifiers_trims_and_deduplicates",
+        "kind": "python-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/tests/test_provider_settings_phase1f.py",
+        "target": "pathlib",
+        "kind": "python-from-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/tests/test_provider_settings_phase1f.py",
+        "target": "config",
+        "kind": "python-from-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/tests/test_provider_settings_phase1f.py",
+        "target": "core",
+        "kind": "python-from-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/tests/test_provider_settings_phase1f.py",
+        "target": "model_router.base",
+        "kind": "python-from-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/tests/test_router_phase1c.py",
+        "target": "pytest\nimport httpx\n\nfrom model_router.base import BaseProvider\nfrom model_router import router as router_module\n\n\ndef build_provider_settings",
+        "kind": "python-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/tests/test_router_phase1c.py",
+        "target": "model_router.base",
+        "kind": "python-from-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/tests/test_router_phase1c.py",
+        "target": "model_router",
+        "kind": "python-from-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/tests/test_router_phase1c.py",
+        "target": "model_router.ollama_provider",
+        "kind": "python-from-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/tests/test_workspace.py",
+        "target": "pytest\nimport pytest_asyncio\n\nfrom main import app\nfrom storage import db as storage_db",
+        "kind": "python-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/tests/test_workspace.py",
+        "target": "__future__",
+        "kind": "python-from-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/tests/test_workspace.py",
+        "target": "httpx",
+        "kind": "python-from-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/tests/test_workspace.py",
+        "target": "main",
+        "kind": "python-from-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/tests/test_workspace.py",
+        "target": "storage",
+        "kind": "python-from-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/workspace/store.py",
+        "target": "json\nimport re\nfrom datetime import datetime",
+        "kind": "python-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/workspace/store.py",
+        "target": "timezone\nfrom typing import Any\n\nimport aiosqlite\n\nfrom config import settings\nfrom storage.db import get_db\n\nALLOWED_ITEM_TYPES",
+        "kind": "python-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/workspace/store.py",
+        "target": "__future__",
+        "kind": "python-from-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/workspace/store.py",
+        "target": "datetime",
+        "kind": "python-from-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/workspace/store.py",
+        "target": "typing",
+        "kind": "python-from-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/workspace/store.py",
+        "target": "config",
+        "kind": "python-from-import",
+        "internal": false
+      },
+      {
+        "file": "apps/backend/workspace/store.py",
+        "target": "storage.db",
+        "kind": "python-from-import",
+        "internal": false
+      },
+      {
+        "file": "apps/desktop/dist-electron/main.js",
+        "target": "electron",
+        "kind": "require",
+        "internal": false
+      },
+      {
+        "file": "apps/desktop/dist-electron/main.js",
+        "target": "child_process",
+        "kind": "require",
+        "internal": false
+      },
+      {
+        "file": "apps/desktop/dist-electron/main.js",
+        "target": "fs",
+        "kind": "require",
+        "internal": false
+      },
+      {
+        "file": "apps/desktop/dist-electron/main.js",
+        "target": "path",
+        "kind": "require",
+        "internal": false
+      },
+      {
+        "file": "apps/desktop/electron/main.ts",
+        "target": "electron",
+        "kind": "import",
+        "internal": false
+      },
+      {
+        "file": "apps/desktop/electron/main.ts",
+        "target": "child_process",
+        "kind": "import",
+        "internal": false
+      },
+      {
+        "file": "apps/desktop/electron/main.ts",
+        "target": "fs",
+        "kind": "import",
+        "internal": false
+      },
+      {
+        "file": "apps/desktop/electron/main.ts",
+        "target": "path",
+        "kind": "import",
+        "internal": false
+      },
+      {
+        "file": "apps/desktop/electron/preload.ts",
+        "target": "electron",
+        "kind": "import",
+        "internal": false
+      },
+      {
+        "file": "apps/desktop/src/App.tsx",
+        "target": "react",
+        "kind": "import",
+        "internal": false
+      },
+      {
+        "file": "apps/desktop/src/App.tsx",
+        "target": "react-router-dom",
+        "kind": "import",
+        "internal": false
+      },
+      {
+        "file": "apps/desktop/src/App.tsx",
+        "target": "./components/Sidebar",
+        "kind": "import",
+        "internal": true,
+        "resolvedTarget": "apps/desktop/src/components/Sidebar.tsx",
+        "resolutionKind": "relative"
+      },
+      {
+        "file": "apps/desktop/src/App.tsx",
+        "target": "./pages/HomePage",
+        "kind": "import",
+        "internal": true,
+        "resolvedTarget": "apps/desktop/src/pages/HomePage.tsx",
+        "resolutionKind": "relative"
+      },
+      {
+        "file": "apps/desktop/src/App.tsx",
+        "target": "./pages/ServicesPage",
+        "kind": "import",
+        "internal": true,
+        "resolvedTarget": "apps/desktop/src/pages/ServicesPage.tsx",
+        "resolutionKind": "relative"
+      },
+      {
+        "file": "apps/desktop/src/App.tsx",
+        "target": "./pages/WorkspacePage",
+        "kind": "import",
+        "internal": true,
+        "resolvedTarget": "apps/desktop/src/pages/WorkspacePage.tsx",
+        "resolutionKind": "relative"
+      },
+      {
+        "file": "apps/desktop/src/App.tsx",
+        "target": "./pages/SettingsPage",
+        "kind": "import",
+        "internal": true,
+        "resolvedTarget": "apps/desktop/src/pages/SettingsPage.tsx",
+        "resolutionKind": "relative"
+      },
+      {
+        "file": "apps/desktop/src/App.tsx",
+        "target": "./pages/LogsPage",
+        "kind": "import",
+        "internal": true,
+        "resolvedTarget": "apps/desktop/src/pages/LogsPage.tsx",
+        "resolutionKind": "relative"
+      },
+      {
+        "file": "apps/desktop/src/App.tsx",
+        "target": "./pages/OverlayPage",
+        "kind": "import",
+        "internal": true,
+        "resolvedTarget": "apps/desktop/src/pages/OverlayPage.tsx",
+        "resolutionKind": "relative"
+      },
+      {
+        "file": "apps/desktop/src/App.tsx",
+        "target": "./pages/HelpPage",
+        "kind": "import",
+        "internal": true,
+        "resolvedTarget": "apps/desktop/src/pages/HelpPage.tsx",
+        "resolutionKind": "relative"
+      },
+      {
+        "file": "apps/desktop/src/App.tsx",
+        "target": "./i18n",
+        "kind": "import",
+        "internal": true,
+        "resolvedTarget": "apps/desktop/src/i18n/index.tsx",
+        "resolutionKind": "relative"
+      },
+      {
+        "file": "apps/desktop/src/components/ActionButtons.tsx",
+        "target": "react",
+        "kind": "import",
+        "internal": false
+      },
+      {
+        "file": "apps/desktop/src/components/ActionButtons.tsx",
+        "target": "../i18n",
+        "kind": "import",
+        "internal": true,
+        "resolvedTarget": "apps/desktop/src/i18n/index.tsx",
+        "resolutionKind": "relative"
+      },
+      {
+        "file": "apps/desktop/src/components/ActionButtons.tsx",
+        "target": "../types/omniagent",
+        "kind": "import",
+        "internal": true
+      },
+      {
+        "file": "apps/desktop/src/components/CommandCenterCards.tsx",
+        "target": "react-router-dom",
+        "kind": "import",
+        "internal": false
+      },
+      {
+        "file": "apps/desktop/src/components/CommandCenterCards.tsx",
+        "target": "../i18n",
+        "kind": "import",
+        "internal": true,
+        "resolvedTarget": "apps/desktop/src/i18n/index.tsx",
+        "resolutionKind": "relative"
+      },
+      {
+        "file": "apps/desktop/src/components/HealthIndicator.tsx",
+        "target": "react",
+        "kind": "import",
+        "internal": false
+      },
+      {
+        "file": "apps/desktop/src/components/HealthIndicator.tsx",
+        "target": "../i18n",
+        "kind": "import",
+        "internal": true,
+        "resolvedTarget": "apps/desktop/src/i18n/index.tsx",
+        "resolutionKind": "relative"
+      },
+      {
+        "file": "apps/desktop/src/components/HealthIndicator.tsx",
+        "target": "../lib/api",
+        "kind": "import",
+        "internal": true,
+        "resolvedTarget": "apps/desktop/src/lib/api.ts",
+        "resolutionKind": "relative"
+      },
+      {
+        "file": "apps/desktop/src/components/HealthIndicator.tsx",
+        "target": "../types/omniagent",
+        "kind": "import",
+        "internal": true
+      },
+      {
+        "file": "apps/desktop/src/components/ManualVerificationChecklist.tsx",
+        "target": "react",
+        "kind": "import",
+        "internal": false
+      },
+      {
+        "file": "apps/desktop/src/components/ManualVerificationChecklist.tsx",
+        "target": "../i18n",
+        "kind": "import",
+        "internal": true,
+        "resolvedTarget": "apps/desktop/src/i18n/index.tsx",
+        "resolutionKind": "relative"
+      },
+      {
+        "file": "apps/desktop/src/components/OnboardingChecklistCard.tsx",
+        "target": "../i18n",
+        "kind": "import",
+        "internal": true,
+        "resolvedTarget": "apps/desktop/src/i18n/index.tsx",
+        "resolutionKind": "relative"
+      },
+      {
+        "file": "apps/desktop/src/components/Overlay.tsx",
+        "target": "react",
+        "kind": "import",
+        "internal": false
+      },
+      {
+        "file": "apps/desktop/src/components/Overlay.tsx",
+        "target": "../i18n",
+        "kind": "import",
+        "internal": true,
+        "resolvedTarget": "apps/desktop/src/i18n/index.tsx",
+        "resolutionKind": "relative"
+      },
+      {
+        "file": "apps/desktop/src/components/OverlaySelectedInputMiniPanel.tsx",
+        "target": "react",
+        "kind": "import",
+        "internal": false
+      },
+      {
+        "file": "apps/desktop/src/components/OverlaySelectedInputMiniPanel.tsx",
+        "target": "../i18n",
+        "kind": "import",
+        "internal": true,
+        "resolvedTarget": "apps/desktop/src/i18n/index.tsx",
+        "resolutionKind": "relative"
+      },
+      {
+        "file": "apps/desktop/src/components/OverlaySelectedInputMiniPanel.tsx",
+        "target": "./ActionButtons",
+        "kind": "import",
+        "internal": true,
+        "resolvedTarget": "apps/desktop/src/components/ActionButtons.tsx",
+        "resolutionKind": "relative"
+      },
+      {
+        "file": "apps/desktop/src/components/ProviderGuidancePanel.tsx",
+        "target": "../i18n",
+        "kind": "import",
+        "internal": true,
+        "resolvedTarget": "apps/desktop/src/i18n/index.tsx",
+        "resolutionKind": "relative"
+      },
+      {
+        "file": "apps/desktop/src/components/ProviderManualStartGuidanceStrip.tsx",
+        "target": "react",
+        "kind": "import",
+        "internal": false
+      },
+      {
+        "file": "apps/desktop/src/components/ProviderManualStartGuidanceStrip.tsx",
+        "target": "../i18n",
+        "kind": "import",
+        "internal": true,
+        "resolvedTarget": "apps/desktop/src/i18n/index.tsx",
+        "resolutionKind": "relative"
+      },
+      {
+        "file": "apps/desktop/src/components/ProviderManualStartGuidanceStrip.tsx",
+        "target": "./ProviderSelector",
+        "kind": "import",
+        "internal": true,
+        "resolvedTarget": "apps/desktop/src/components/ProviderSelector.tsx",
+        "resolutionKind": "relative"
+      },
+      {
+        "file": "apps/desktop/src/components/ProviderReadinessMatrix.tsx",
+        "target": "../i18n",
+        "kind": "import",
+        "internal": true,
+        "resolvedTarget": "apps/desktop/src/i18n/index.tsx",
+        "resolutionKind": "relative"
+      },
+      {
+        "file": "apps/desktop/src/components/ProviderReadinessMatrix.tsx",
+        "target": "./ProviderSelector",
+        "kind": "import",
+        "internal": true,
+        "resolvedTarget": "apps/desktop/src/components/ProviderSelector.tsx",
+        "resolutionKind": "relative"
+      },
+      {
+        "file": "apps/desktop/src/components/ProviderSelector.tsx",
+        "target": "../i18n",
+        "kind": "import",
+        "internal": true,
+        "resolvedTarget": "apps/desktop/src/i18n/index.tsx",
+        "resolutionKind": "relative"
+      },
+      {
+        "file": "apps/desktop/src/components/ProviderSelector.tsx",
+        "target": "./ProviderGuidancePanel",
+        "kind": "import",
+        "internal": true,
+        "resolvedTarget": "apps/desktop/src/components/ProviderGuidancePanel.tsx",
+        "resolutionKind": "relative"
+      },
+      {
+        "file": "apps/desktop/src/components/ResultPreview.tsx",
+        "target": "./ActionButtons",
+        "kind": "import",
+        "internal": true,
+        "resolvedTarget": "apps/desktop/src/components/ActionButtons.tsx",
+        "resolutionKind": "relative"
+      },
+      {
+        "file": "apps/desktop/src/components/ResultPreview.tsx",
+        "target": "../i18n",
+        "kind": "import",
+        "internal": true,
+        "resolvedTarget": "apps/desktop/src/i18n/index.tsx",
+        "resolutionKind": "relative"
+      },
+      {
+        "file": "apps/desktop/src/components/SafePromptTemplates.tsx",
+        "target": "../i18n",
+        "kind": "import",
+        "internal": true,
+        "resolvedTarget": "apps/desktop/src/i18n/index.tsx",
+        "resolutionKind": "relative"
+      },
+      {
+        "file": "apps/desktop/src/components/SelectedInputPanel.tsx",
+        "target": "react",
+        "kind": "import",
+        "internal": false
+      },
+      {
+        "file": "apps/desktop/src/components/SelectedInputPanel.tsx",
+        "target": "../i18n",
+        "kind": "import",
+        "internal": true,
+        "resolvedTarget": "apps/desktop/src/i18n/index.tsx",
+        "resolutionKind": "relative"
+      },
+      {
+        "file": "apps/desktop/src/components/SelectedInputPanel.tsx",
+        "target": "./ActionButtons",
+        "kind": "import",
+        "internal": true,
+        "resolvedTarget": "apps/desktop/src/components/ActionButtons.tsx",
+        "resolutionKind": "relative"
+      },
+      {
+        "file": "apps/desktop/src/components/Sidebar.tsx",
+        "target": "react-router-dom",
+        "kind": "import",
+        "internal": false
+      },
+      {
+        "file": "apps/desktop/src/components/Sidebar.tsx",
+        "target": "../i18n",
+        "kind": "import",
+        "internal": true,
+        "resolvedTarget": "apps/desktop/src/i18n/index.tsx",
+        "resolutionKind": "relative"
+      },
+      {
+        "file": "apps/desktop/src/i18n/en.ts",
+        "target": "./messages",
+        "kind": "import",
+        "internal": true,
+        "resolvedTarget": "apps/desktop/src/i18n/messages.ts",
+        "resolutionKind": "relative"
+      },
+      {
+        "file": "apps/desktop/src/i18n/index.tsx",
+        "target": "react",
+        "kind": "import",
+        "internal": false
+      },
+      {
+        "file": "apps/desktop/src/i18n/index.tsx",
+        "target": "./en",
+        "kind": "import",
+        "internal": true,
+        "resolvedTarget": "apps/desktop/src/i18n/en.ts",
+        "resolutionKind": "relative"
+      },
+      {
+        "file": "apps/desktop/src/i18n/index.tsx",
+        "target": "./messages",
+        "kind": "import",
+        "internal": true,
+        "resolvedTarget": "apps/desktop/src/i18n/messages.ts",
+        "resolutionKind": "relative"
+      },
+      {
+        "file": "apps/desktop/src/i18n/messages.ts",
+        "target": "./ar",
+        "kind": "import",
+        "internal": true,
+        "resolvedTarget": "apps/desktop/src/i18n/ar.ts",
+        "resolutionKind": "relative"
+      },
+      {
+        "file": "apps/desktop/src/lib/workspace.ts",
+        "target": "../components/ActionButtons",
+        "kind": "import",
+        "internal": true,
+        "resolvedTarget": "apps/desktop/src/components/ActionButtons.tsx",
+        "resolutionKind": "relative"
+      },
+      {
+        "file": "apps/desktop/src/lib/workspace.ts",
+        "target": "./api",
+        "kind": "import",
+        "internal": true,
+        "resolvedTarget": "apps/desktop/src/lib/api.ts",
+        "resolutionKind": "relative"
+      },
+      {
+        "file": "apps/desktop/src/main.tsx",
+        "target": "react",
+        "kind": "import",
+        "internal": false
+      },
+      {
+        "file": "apps/desktop/src/main.tsx",
+        "target": "react-dom/client",
+        "kind": "import",
+        "internal": false
+      },
+      {
+        "file": "apps/desktop/src/main.tsx",
+        "target": "./App",
+        "kind": "import",
+        "internal": true,
+        "resolvedTarget": "apps/desktop/src/App.tsx",
+        "resolutionKind": "relative"
+      },
+      {
+        "file": "apps/desktop/src/main.tsx",
+        "target": "./i18n",
+        "kind": "import",
+        "internal": true,
+        "resolvedTarget": "apps/desktop/src/i18n/index.tsx",
+        "resolutionKind": "relative"
+      },
+      {
+        "file": "apps/desktop/src/pages/HelpPage.tsx",
+        "target": "../components/ManualVerificationChecklist",
+        "kind": "import",
+        "internal": true,
+        "resolvedTarget": "apps/desktop/src/components/ManualVerificationChecklist.tsx",
+        "resolutionKind": "relative"
+      },
+      {
+        "file": "apps/desktop/src/pages/HelpPage.tsx",
+        "target": "../i18n",
+        "kind": "import",
+        "internal": true,
+        "resolvedTarget": "apps/desktop/src/i18n/index.tsx",
+        "resolutionKind": "relative"
+      },
+      {
+        "file": "apps/desktop/src/pages/HomePage.tsx",
+        "target": "react",
+        "kind": "import",
+        "internal": false
+      },
+      {
+        "file": "apps/desktop/src/pages/HomePage.tsx",
+        "target": "react-router-dom",
+        "kind": "import",
+        "internal": false
+      },
+      {
+        "file": "apps/desktop/src/pages/HomePage.tsx",
+        "target": "../components/CommandCenterCards",
+        "kind": "import",
+        "internal": true,
+        "resolvedTarget": "apps/desktop/src/components/CommandCenterCards.tsx",
+        "resolutionKind": "relative"
+      },
+      {
+        "file": "apps/desktop/src/pages/HomePage.tsx",
+        "target": "../components/HealthIndicator",
+        "kind": "import",
+        "internal": true,
+        "resolvedTarget": "apps/desktop/src/components/HealthIndicator.tsx",
+        "resolutionKind": "relative"
+      },
+      {
+        "file": "apps/desktop/src/pages/HomePage.tsx",
+        "target": "../components/ProviderSelector",
+        "kind": "import",
+        "internal": true,
+        "resolvedTarget": "apps/desktop/src/components/ProviderSelector.tsx",
+        "resolutionKind": "relative"
+      },
+      {
+        "file": "apps/desktop/src/pages/HomePage.tsx",
+        "target": "../components/ProviderGuidancePanel",
+        "kind": "import",
+        "internal": true,
+        "resolvedTarget": "apps/desktop/src/components/ProviderGuidancePanel.tsx",
+        "resolutionKind": "relative"
+      },
+      {
+        "file": "apps/desktop/src/pages/HomePage.tsx",
+        "target": "../components/ProviderManualStartGuidanceStrip",
+        "kind": "import",
+        "internal": true,
+        "resolvedTarget": "apps/desktop/src/components/ProviderManualStartGuidanceStrip.tsx",
+        "resolutionKind": "relative"
+      },
+      {
+        "file": "apps/desktop/src/pages/HomePage.tsx",
+        "target": "../components/ActionButtons",
+        "kind": "import",
+        "internal": true,
+        "resolvedTarget": "apps/desktop/src/components/ActionButtons.tsx",
+        "resolutionKind": "relative"
+      },
+      {
+        "file": "apps/desktop/src/pages/HomePage.tsx",
+        "target": "../components/ResultPreview",
+        "kind": "import",
+        "internal": true,
+        "resolvedTarget": "apps/desktop/src/components/ResultPreview.tsx",
+        "resolutionKind": "relative"
+      },
+      {
+        "file": "apps/desktop/src/pages/HomePage.tsx",
+        "target": "../components/SafePromptTemplates",
+        "kind": "import",
+        "internal": true,
+        "resolvedTarget": "apps/desktop/src/components/SafePromptTemplates.tsx",
+        "resolutionKind": "relative"
+      },
+      {
+        "file": "apps/desktop/src/pages/HomePage.tsx",
+        "target": "../components/SelectedInputPanel",
+        "kind": "import",
+        "internal": true,
+        "resolvedTarget": "apps/desktop/src/components/SelectedInputPanel.tsx",
+        "resolutionKind": "relative"
+      },
+      {
+        "file": "apps/desktop/src/pages/HomePage.tsx",
+        "target": "../components/OnboardingChecklistCard",
+        "kind": "import",
+        "internal": true,
+        "resolvedTarget": "apps/desktop/src/components/OnboardingChecklistCard.tsx",
+        "resolutionKind": "relative"
+      },
+      {
+        "file": "apps/desktop/src/pages/HomePage.tsx",
+        "target": "../i18n",
+        "kind": "import",
+        "internal": true,
+        "resolvedTarget": "apps/desktop/src/i18n/index.tsx",
+        "resolutionKind": "relative"
+      },
+      {
+        "file": "apps/desktop/src/pages/HomePage.tsx",
+        "target": "../lib/api",
+        "kind": "import",
+        "internal": true,
+        "resolvedTarget": "apps/desktop/src/lib/api.ts",
+        "resolutionKind": "relative"
+      },
+      {
+        "file": "apps/desktop/src/pages/HomePage.tsx",
+        "target": "../lib/workspace",
+        "kind": "import",
+        "internal": true,
+        "resolvedTarget": "apps/desktop/src/lib/workspace.ts",
+        "resolutionKind": "relative"
+      },
+      {
+        "file": "apps/desktop/src/pages/LogsPage.tsx",
+        "target": "react",
+        "kind": "import",
+        "internal": false
+      },
+      {
+        "file": "apps/desktop/src/pages/LogsPage.tsx",
+        "target": "../i18n",
+        "kind": "import",
+        "internal": true,
+        "resolvedTarget": "apps/desktop/src/i18n/index.tsx",
+        "resolutionKind": "relative"
+      },
+      {
+        "file": "apps/desktop/src/pages/LogsPage.tsx",
+        "target": "../lib/api",
+        "kind": "import",
+        "internal": true,
+        "resolvedTarget": "apps/desktop/src/lib/api.ts",
+        "resolutionKind": "relative"
+      },
+      {
+        "file": "apps/desktop/src/pages/OverlayPage.tsx",
+        "target": "react",
+        "kind": "import",
+        "internal": false
+      },
+      {
+        "file": "apps/desktop/src/pages/OverlayPage.tsx",
+        "target": "../components/ActionButtons",
+        "kind": "import",
+        "internal": true,
+        "resolvedTarget": "apps/desktop/src/components/ActionButtons.tsx",
+        "resolutionKind": "relative"
+      },
+      {
+        "file": "apps/desktop/src/pages/OverlayPage.tsx",
+        "target": "../components/OnboardingChecklistCard",
+        "kind": "import",
+        "internal": true,
+        "resolvedTarget": "apps/desktop/src/components/OnboardingChecklistCard.tsx",
+        "resolutionKind": "relative"
+      },
+      {
+        "file": "apps/desktop/src/pages/OverlayPage.tsx",
+        "target": "../components/OverlaySelectedInputMiniPanel",
+        "kind": "import",
+        "internal": true,
+        "resolvedTarget": "apps/desktop/src/components/OverlaySelectedInputMiniPanel.tsx",
+        "resolutionKind": "relative"
+      },
+      {
+        "file": "apps/desktop/src/pages/OverlayPage.tsx",
+        "target": "../components/ProviderManualStartGuidanceStrip",
+        "kind": "import",
+        "internal": true,
+        "resolvedTarget": "apps/desktop/src/components/ProviderManualStartGuidanceStrip.tsx",
+        "resolutionKind": "relative"
+      },
+      {
+        "file": "apps/desktop/src/pages/OverlayPage.tsx",
+        "target": "../components/ProviderSelector",
+        "kind": "import",
+        "internal": true,
+        "resolvedTarget": "apps/desktop/src/components/ProviderSelector.tsx",
+        "resolutionKind": "relative"
+      },
+      {
+        "file": "apps/desktop/src/pages/OverlayPage.tsx",
+        "target": "../components/ResultPreview",
+        "kind": "import",
+        "internal": true,
+        "resolvedTarget": "apps/desktop/src/components/ResultPreview.tsx",
+        "resolutionKind": "relative"
+      },
+      {
+        "file": "apps/desktop/src/pages/OverlayPage.tsx",
+        "target": "../components/SafePromptTemplates",
+        "kind": "import",
+        "internal": true,
+        "resolvedTarget": "apps/desktop/src/components/SafePromptTemplates.tsx",
+        "resolutionKind": "relative"
+      },
+      {
+        "file": "apps/desktop/src/pages/OverlayPage.tsx",
+        "target": "../i18n",
+        "kind": "import",
+        "internal": true,
+        "resolvedTarget": "apps/desktop/src/i18n/index.tsx",
+        "resolutionKind": "relative"
+      },
+      {
+        "file": "apps/desktop/src/pages/OverlayPage.tsx",
+        "target": "../lib/api",
+        "kind": "import",
+        "internal": true,
+        "resolvedTarget": "apps/desktop/src/lib/api.ts",
+        "resolutionKind": "relative"
+      },
+      {
+        "file": "apps/desktop/src/pages/OverlayPage.tsx",
+        "target": "../lib/workspace",
+        "kind": "import",
+        "internal": true,
+        "resolvedTarget": "apps/desktop/src/lib/workspace.ts",
+        "resolutionKind": "relative"
+      },
+      {
+        "file": "apps/desktop/src/pages/OverlayPage.tsx",
+        "target": "../types/omniagent",
+        "kind": "import",
+        "internal": true
+      },
+      {
+        "file": "apps/desktop/src/pages/ServicesPage.tsx",
+        "target": "react",
+        "kind": "import",
+        "internal": false
+      },
+      {
+        "file": "apps/desktop/src/pages/ServicesPage.tsx",
+        "target": "../components/CommandCenterCards",
+        "kind": "import",
+        "internal": true,
+        "resolvedTarget": "apps/desktop/src/components/CommandCenterCards.tsx",
+        "resolutionKind": "relative"
+      },
+      {
+        "file": "apps/desktop/src/pages/ServicesPage.tsx",
+        "target": "../components/HealthIndicator",
+        "kind": "import",
+        "internal": true,
+        "resolvedTarget": "apps/desktop/src/components/HealthIndicator.tsx",
+        "resolutionKind": "relative"
+      },
+      {
+        "file": "apps/desktop/src/pages/ServicesPage.tsx",
+        "target": "../components/ProviderSelector",
+        "kind": "import",
+        "internal": true,
+        "resolvedTarget": "apps/desktop/src/components/ProviderSelector.tsx",
+        "resolutionKind": "relative"
+      },
+      {
+        "file": "apps/desktop/src/pages/ServicesPage.tsx",
+        "target": "../components/ProviderManualStartGuidanceStrip",
+        "kind": "import",
+        "internal": true,
+        "resolvedTarget": "apps/desktop/src/components/ProviderManualStartGuidanceStrip.tsx",
+        "resolutionKind": "relative"
+      },
+      {
+        "file": "apps/desktop/src/pages/ServicesPage.tsx",
+        "target": "../components/ProviderReadinessMatrix",
+        "kind": "import",
+        "internal": true,
+        "resolvedTarget": "apps/desktop/src/components/ProviderReadinessMatrix.tsx",
+        "resolutionKind": "relative"
+      },
+      {
+        "file": "apps/desktop/src/pages/ServicesPage.tsx",
+        "target": "../i18n",
+        "kind": "import",
+        "internal": true,
+        "resolvedTarget": "apps/desktop/src/i18n/index.tsx",
+        "resolutionKind": "relative"
+      },
+      {
+        "file": "apps/desktop/src/pages/ServicesPage.tsx",
+        "target": "../lib/api",
+        "kind": "import",
+        "internal": true,
+        "resolvedTarget": "apps/desktop/src/lib/api.ts",
+        "resolutionKind": "relative"
+      },
+      {
+        "file": "apps/desktop/src/pages/ServicesPage.tsx",
+        "target": "../types/omniagent",
+        "kind": "import",
+        "internal": true
+      },
+      {
+        "file": "apps/desktop/src/pages/SettingsPage.tsx",
+        "target": "react",
+        "kind": "import",
+        "internal": false
+      },
+      {
+        "file": "apps/desktop/src/pages/SettingsPage.tsx",
+        "target": "../components/ProviderSelector",
+        "kind": "import",
+        "internal": true,
+        "resolvedTarget": "apps/desktop/src/components/ProviderSelector.tsx",
+        "resolutionKind": "relative"
+      },
+      {
+        "file": "apps/desktop/src/pages/SettingsPage.tsx",
+        "target": "../components/ProviderGuidancePanel",
+        "kind": "import",
+        "internal": true,
+        "resolvedTarget": "apps/desktop/src/components/ProviderGuidancePanel.tsx",
+        "resolutionKind": "relative"
+      },
+      {
+        "file": "apps/desktop/src/pages/SettingsPage.tsx",
+        "target": "../components/ProviderReadinessMatrix",
+        "kind": "import",
+        "internal": true,
+        "resolvedTarget": "apps/desktop/src/components/ProviderReadinessMatrix.tsx",
+        "resolutionKind": "relative"
+      },
+      {
+        "file": "apps/desktop/src/pages/SettingsPage.tsx",
+        "target": "../i18n",
+        "kind": "import",
+        "internal": true,
+        "resolvedTarget": "apps/desktop/src/i18n/index.tsx",
+        "resolutionKind": "relative"
+      },
+      {
+        "file": "apps/desktop/src/pages/SettingsPage.tsx",
+        "target": "../lib/api",
+        "kind": "import",
+        "internal": true,
+        "resolvedTarget": "apps/desktop/src/lib/api.ts",
+        "resolutionKind": "relative"
+      },
+      {
+        "file": "apps/desktop/src/pages/WorkspacePage.tsx",
+        "target": "react",
+        "kind": "import",
+        "internal": false
+      },
+      {
+        "file": "apps/desktop/src/pages/WorkspacePage.tsx",
+        "target": "../i18n",
+        "kind": "import",
+        "internal": true,
+        "resolvedTarget": "apps/desktop/src/i18n/index.tsx",
+        "resolutionKind": "relative"
+      },
+      {
+        "file": "apps/desktop/src/pages/WorkspacePage.tsx",
+        "target": "../lib/api",
+        "kind": "import",
+        "internal": true,
+        "resolvedTarget": "apps/desktop/src/lib/api.ts",
+        "resolutionKind": "relative"
+      },
+      {
+        "file": "apps/desktop/src/pages/WorkspacePage.tsx",
+        "target": "../lib/workspace",
+        "kind": "import",
+        "internal": true,
+        "resolvedTarget": "apps/desktop/src/lib/workspace.ts",
+        "resolutionKind": "relative"
+      },
+      {
+        "file": "apps/desktop/vite.config.ts",
+        "target": "vite",
+        "kind": "import",
+        "internal": false
+      },
+      {
+        "file": "apps/desktop/vite.config.ts",
+        "target": "@vitejs/plugin-react",
+        "kind": "import",
+        "internal": false
+      },
+      {
+        "file": "apps/desktop/vite.config.ts",
+        "target": "vite-plugin-electron",
+        "kind": "import",
+        "internal": false
+      },
+      {
+        "file": "apps/desktop/vite.config.ts",
+        "target": "vite-plugin-electron-renderer",
+        "kind": "import",
+        "internal": false
+      }
+    ],
+    "moduleResolution": {
+      "aliases": [],
+      "basePaths": [
+        {
+          "path": "apps/desktop",
+          "source": "apps/desktop/tsconfig.json"
+        }
+      ],
+      "configFiles": [
+        "apps/desktop/tsconfig.json"
+      ],
+      "resolvedInternalImports": 88,
+      "unresolvedInternalImports": 4,
+      "aliasResolvedImports": 0,
+      "relativeResolvedImports": 81,
+      "baseUrlResolvedImports": 0,
+      "notes": [
+        "Detected 0 alias pattern(s) from 1 config file(s).",
+        "Resolved 88 internal import(s); 4 remained unresolved.",
+        "Detected 1 base path hint(s) from tsconfig/jsconfig."
+      ]
+    },
+    "layers": [
+      {
+        "name": "api",
+        "files": [
+          "apps/backend/api/__init__.py",
+          "apps/backend/api/actions.py",
+          "apps/backend/api/agent.py",
+          "apps/backend/api/context.py",
+          "apps/backend/api/health.py",
+          "apps/backend/api/logs.py",
+          "apps/backend/api/models.py",
+          "apps/backend/api/workspace.py",
+          "apps/desktop/src/App.tsx"
+        ]
+      },
+      {
+        "name": "config",
+        "files": [
+          "apps/backend/config.py",
+          "apps/backend/runtime/provider_settings.json",
+          "apps/backend/runtime/provider_tests.json",
+          "apps/desktop/package-lock.json",
+          "apps/desktop/package.json",
+          "apps/desktop/release/builder-debug.yml",
+          "apps/desktop/release/win-unpacked/vk_swiftshader_icd.json",
+          "apps/desktop/tsconfig.json",
+          "apps/desktop/vite.config.ts",
+          "package-lock.json",
+          "package.json"
+        ]
+      },
+      {
+        "name": "database",
+        "files": [
+          "apps/backend/api/models.py"
+        ]
+      },
+      {
+        "name": "docs",
+        "files": [
+          "README.md",
+          "STATUS.md",
+          "docs/ACTION_SCHEMA.md",
+          "docs/ARCHITECTURE.md",
+          "docs/MVP_ACCEPTANCE_CRITERIA.md",
+          "docs/PRODUCT_SPEC.md",
+          "docs/ROADMAP.md",
+          "docs/SAFETY_RULES.md"
+        ]
+      },
+      {
+        "name": "frontend",
+        "files": [
+          "apps/desktop/src/App.tsx",
+          "apps/desktop/src/components/ActionButtons.tsx",
+          "apps/desktop/src/components/CommandCenterCards.tsx",
+          "apps/desktop/src/components/HealthIndicator.tsx",
+          "apps/desktop/src/components/ManualVerificationChecklist.tsx",
+          "apps/desktop/src/components/OnboardingChecklistCard.tsx",
+          "apps/desktop/src/components/Overlay.tsx",
+          "apps/desktop/src/components/OverlaySelectedInputMiniPanel.tsx",
+          "apps/desktop/src/components/ProviderGuidancePanel.tsx",
+          "apps/desktop/src/components/ProviderManualStartGuidanceStrip.tsx",
+          "apps/desktop/src/components/ProviderReadinessMatrix.tsx",
+          "apps/desktop/src/components/ProviderSelector.tsx",
+          "apps/desktop/src/components/ResultPreview.tsx",
+          "apps/desktop/src/components/SafePromptTemplates.tsx",
+          "apps/desktop/src/components/SelectedInputPanel.tsx",
+          "apps/desktop/src/components/Sidebar.tsx",
+          "apps/desktop/src/i18n/index.tsx",
+          "apps/desktop/src/main.tsx",
+          "apps/desktop/src/pages/HelpPage.tsx",
+          "apps/desktop/src/pages/HomePage.tsx"
+        ]
+      },
+      {
+        "name": "scripts",
+        "files": [
+          "scripts/dev-start.ps1",
+          "scripts/health-check.ps1",
+          "scripts/install-backend.ps1",
+          "scripts/install-desktop.ps1",
+          "scripts/package-backend.ps1"
+        ]
+      },
+      {
+        "name": "unknown",
+        "files": [
+          "apps/backend/main.py",
+          "apps/backend/model_router/router.py",
+          "apps/backend/storage/db.py",
+          "apps/backend/tests/test_actions_phase2a.py",
+          "apps/backend/tests/test_agent_phase1c.py",
+          "apps/backend/tests/test_context.py",
+          "apps/backend/tests/test_health.py",
+          "apps/backend/tests/test_models_phase1c.py",
+          "apps/backend/tests/test_provider_settings_phase1f.py",
+          "apps/backend/tests/test_router_phase1c.py",
+          "apps/backend/tests/test_workspace.py"
+        ]
+      }
+    ],
+    "dataModels": [
+      {
+        "name": "PreviewRequest",
+        "source": "SQLAlchemy Model",
+        "file": "apps/backend/api/actions.py",
+        "confidence": 0.8
+      },
+      {
+        "name": "ConfirmRequest",
+        "source": "SQLAlchemy Model",
+        "file": "apps/backend/api/actions.py",
+        "confidence": 0.8
+      },
+      {
+        "name": "LegacyCopyRequest",
+        "source": "SQLAlchemy Model",
+        "file": "apps/backend/api/actions.py",
+        "confidence": 0.8
+      },
+      {
+        "name": "LegacyPastePreviewRequest",
+        "source": "SQLAlchemy Model",
+        "file": "apps/backend/api/actions.py",
+        "confidence": 0.8
+      },
+      {
+        "name": "PreviewRequest",
+        "source": "Pydantic Model",
+        "file": "apps/backend/api/actions.py",
+        "confidence": 0.85
+      },
+      {
+        "name": "ConfirmRequest",
+        "source": "Pydantic Model",
+        "file": "apps/backend/api/actions.py",
+        "confidence": 0.85
+      },
+      {
+        "name": "LegacyCopyRequest",
+        "source": "Pydantic Model",
+        "file": "apps/backend/api/actions.py",
+        "confidence": 0.85
+      },
+      {
+        "name": "LegacyPastePreviewRequest",
+        "source": "Pydantic Model",
+        "file": "apps/backend/api/actions.py",
+        "confidence": 0.85
+      },
+      {
+        "name": "AgentRunRequest",
+        "source": "SQLAlchemy Model",
+        "file": "apps/backend/api/agent.py",
+        "confidence": 0.8
+      },
+      {
+        "name": "SelectedInputRequest",
+        "source": "SQLAlchemy Model",
+        "file": "apps/backend/api/agent.py",
+        "confidence": 0.8
+      },
+      {
+        "name": "AgentRunRequest",
+        "source": "Pydantic Model",
+        "file": "apps/backend/api/agent.py",
+        "confidence": 0.85
+      },
+      {
+        "name": "SelectedInputRequest",
+        "source": "Pydantic Model",
+        "file": "apps/backend/api/agent.py",
+        "confidence": 0.85
+      },
+      {
+        "name": "ProviderTestRequest",
+        "source": "SQLAlchemy Model",
+        "file": "apps/backend/api/models.py",
+        "confidence": 0.8
+      },
+      {
+        "name": "ProviderSettingsUpdateRequest",
+        "source": "SQLAlchemy Model",
+        "file": "apps/backend/api/models.py",
+        "confidence": 0.8
+      },
+      {
+        "name": "ProviderTestRequest",
+        "source": "Pydantic Model",
+        "file": "apps/backend/api/models.py",
+        "confidence": 0.85
+      },
+      {
+        "name": "ProviderSettingsUpdateRequest",
+        "source": "Pydantic Model",
+        "file": "apps/backend/api/models.py",
+        "confidence": 0.85
+      },
+      {
+        "name": "SafeWorkspaceModel",
+        "source": "SQLAlchemy Model",
+        "file": "apps/backend/api/workspace.py",
+        "confidence": 0.8
+      },
+      {
+        "name": "SafeWorkspaceModel",
+        "source": "Pydantic Model",
+        "file": "apps/backend/api/workspace.py",
+        "confidence": 0.85
+      },
+      {
+        "name": "ClipboardSnapshot",
+        "source": "Python Dataclass",
+        "file": "apps/backend/context_engine/clipboard.py",
+        "confidence": 0.7
+      },
+      {
+        "name": "ProviderResult",
+        "source": "Python Dataclass",
+        "file": "apps/backend/model_router/base.py",
+        "confidence": 0.7
+      },
+      {
+        "name": "OllamaProvider",
+        "source": "SQLAlchemy Model",
+        "file": "apps/backend/model_router/ollama_provider.py",
+        "confidence": 0.8
+      },
+      {
+        "name": "OpenAICompatibleProvider",
+        "source": "SQLAlchemy Model",
+        "file": "apps/backend/model_router/openai_compatible_provider.py",
+        "confidence": 0.8
+      },
+      {
+        "name": "ExplodingProvider",
+        "source": "SQLAlchemy Model",
+        "file": "apps/backend/tests/test_router_phase1c.py",
+        "confidence": 0.8
+      },
+      {
+        "name": "SanitizingProvider",
+        "source": "SQLAlchemy Model",
+        "file": "apps/backend/tests/test_router_phase1c.py",
+        "confidence": 0.8
+      },
+      {
+        "name": "RecordingProvider",
+        "source": "SQLAlchemy Model",
+        "file": "apps/backend/tests/test_router_phase1c.py",
+        "confidence": 0.8
+      },
+      {
+        "name": "TimeoutProvider",
+        "source": "SQLAlchemy Model",
+        "file": "apps/backend/tests/test_router_phase1c.py",
+        "confidence": 0.8
+      },
+      {
+        "name": "MalformedProvider",
+        "source": "SQLAlchemy Model",
+        "file": "apps/backend/tests/test_router_phase1c.py",
+        "confidence": 0.8
+      }
+    ],
+    "envUsage": [
+      {
+        "name": "BACKEND_HOST",
+        "file": "apps/backend/config.py",
+        "source": "os.getenv"
+      },
+      {
+        "name": "BACKEND_PORT",
+        "file": "apps/backend/config.py",
+        "source": "os.getenv"
+      },
+      {
+        "name": "LOG_LEVEL",
+        "file": "apps/backend/config.py",
+        "source": "os.getenv"
+      },
+      {
+        "name": "DB_PATH",
+        "file": "apps/backend/config.py",
+        "source": "os.getenv"
+      },
+      {
+        "name": "PASTE_RESTORE_CLIPBOARD",
+        "file": "apps/backend/config.py",
+        "source": "os.getenv"
+      },
+      {
+        "name": "PASTE_DELAY_MS",
+        "file": "apps/backend/config.py",
+        "source": "os.getenv"
+      },
+      {
+        "name": "PASTE_PREVIEW_MAX_CHARS",
+        "file": "apps/backend/config.py",
+        "source": "os.getenv"
+      },
+      {
+        "name": "ACTION_LOG_CONTENT_ENABLED",
+        "file": "apps/backend/config.py",
+        "source": "os.getenv"
+      },
+      {
+        "name": "ENABLE_SELECTED_TEXT_CAPTURE",
+        "file": "apps/backend/config.py",
+        "source": "os.getenv"
+      },
+      {
+        "name": "CONTEXT_PREVIEW_MAX_CHARS",
+        "file": "apps/backend/config.py",
+        "source": "os.getenv"
+      },
+      {
+        "name": "CLIPBOARD_CAPTURE_ENABLED",
+        "file": "apps/backend/config.py",
+        "source": "os.getenv"
+      },
+      {
+        "name": "ACTIVE_WINDOW_CAPTURE_ENABLED",
+        "file": "apps/backend/config.py",
+        "source": "os.getenv"
+      },
+      {
+        "name": "SELECTED_TEXT_CAPTURE_TIMEOUT_MS",
+        "file": "apps/backend/config.py",
+        "source": "os.getenv"
+      },
+      {
+        "name": "SELECTED_TEXT_RESTORE_CLIPBOARD",
+        "file": "apps/backend/config.py",
+        "source": "os.getenv"
+      },
+      {
+        "name": "SELECTED_TEXT_PREVIEW_MAX_CHARS",
+        "file": "apps/backend/config.py",
+        "source": "os.getenv"
+      },
+      {
+        "name": "SCREENSHOT_CAPTURE_ENABLED",
+        "file": "apps/backend/config.py",
+        "source": "os.getenv"
+      },
+      {
+        "name": "SCREENSHOT_PREVIEW_ENABLED",
+        "file": "apps/backend/config.py",
+        "source": "os.getenv"
+      },
+      {
+        "name": "SCREENSHOT_SAVE_TEMP",
+        "file": "apps/backend/config.py",
+        "source": "os.getenv"
+      },
+      {
+        "name": "SCREENSHOT_MAX_WIDTH",
+        "file": "apps/backend/config.py",
+        "source": "os.getenv"
+      },
+      {
+        "name": "SCREENSHOT_FORMAT",
+        "file": "apps/backend/config.py",
+        "source": "os.getenv"
+      },
+      {
+        "name": "ACTIVE_PROVIDER",
+        "file": "apps/backend/config.py",
+        "source": "os.getenv"
+      },
+      {
+        "name": "ACTIVE_MODEL",
+        "file": "apps/backend/config.py",
+        "source": "os.getenv"
+      },
+      {
+        "name": "OLLAMA_BASE_URL",
+        "file": "apps/backend/config.py",
+        "source": "os.getenv"
+      },
+      {
+        "name": "OLLAMA_MODEL",
+        "file": "apps/backend/config.py",
+        "source": "os.getenv"
+      },
+      {
+        "name": "LMSTUDIO_BASE_URL",
+        "file": "apps/backend/config.py",
+        "source": "os.getenv"
+      },
+      {
+        "name": "LMSTUDIO_MODEL",
+        "file": "apps/backend/config.py",
+        "source": "os.getenv"
+      },
+      {
+        "name": "OPENAI_COMPATIBLE_BASE_URL",
+        "file": "apps/backend/config.py",
+        "source": "os.getenv"
+      },
+      {
+        "name": "OPENAI_COMPATIBLE_MODEL",
+        "file": "apps/backend/config.py",
+        "source": "os.getenv"
+      },
+      {
+        "name": "OPENAI_COMPATIBLE_API_KEY_ENV",
+        "file": "apps/backend/config.py",
+        "source": "os.getenv"
+      },
+      {
+        "name": "REQUEST_TIMEOUT_SECONDS",
+        "file": "apps/backend/config.py",
+        "source": "os.getenv"
+      },
+      {
+        "name": "PROVIDER_SETTINGS_PATH",
+        "file": "apps/backend/config.py",
+        "source": "os.getenv"
+      },
+      {
+        "name": "PROVIDER_TEST_HISTORY_PATH",
+        "file": "apps/backend/config.py",
+        "source": "os.getenv"
+      },
+      {
+        "name": "MAX_PROMPT_CHARS",
+        "file": "apps/backend/config.py",
+        "source": "os.getenv"
+      },
+      {
+        "name": "MAX_CONTEXT_CHARS",
+        "file": "apps/backend/config.py",
+        "source": "os.getenv"
+      },
+      {
+        "name": "BACKEND_HOST",
+        "file": "apps/backend/desktop_runtime.py",
+        "source": "os.getenv"
+      },
+      {
+        "name": "BACKEND_PORT",
+        "file": "apps/backend/desktop_runtime.py",
+        "source": "os.getenv"
+      },
+      {
+        "name": "LOG_LEVEL",
+        "file": "apps/backend/desktop_runtime.py",
+        "source": "os.getenv"
+      },
+      {
+        "name": "DB_PATH",
+        "file": "apps/backend/storage/db.py",
+        "source": "os.getenv"
+      },
+      {
+        "name": "VITE_DEV_SERVER_URL",
+        "file": "apps/desktop/dist-electron/main.js",
+        "source": "process.env"
+      },
+      {
+        "name": "LOG_LEVEL",
+        "file": "apps/desktop/dist-electron/main.js",
+        "source": "process.env"
+      },
+      {
+        "name": "VITE_DEV_SERVER_URL",
+        "file": "apps/desktop/electron/main.ts",
+        "source": "process.env"
+      },
+      {
+        "name": "LOG_LEVEL",
+        "file": "apps/desktop/electron/main.ts",
+        "source": "process.env"
+      }
+    ],
+    "packageRelationships": [],
+    "importantFiles": [
+      {
+        "file": "apps/backend/api/workspace.py",
+        "score": 115,
+        "reasons": [
+          "entrypoint",
+          "route surface",
+          "data model",
+          "import hub"
+        ]
+      },
+      {
+        "file": "apps/backend/api/actions.py",
+        "score": 94,
+        "reasons": [
+          "entrypoint",
+          "route surface",
+          "data model",
+          "import hub"
+        ]
+      },
+      {
+        "file": "apps/backend/api/models.py",
+        "score": 66,
+        "reasons": [
+          "entrypoint",
+          "route surface",
+          "data model",
+          "import hub"
+        ]
+      },
+      {
+        "file": "apps/backend/api/agent.py",
+        "score": 54,
+        "reasons": [
+          "entrypoint",
+          "route surface",
+          "data model",
+          "import hub"
+        ]
+      },
+      {
+        "file": "apps/desktop/src/App.tsx",
+        "score": 47,
+        "reasons": [
+          "route surface",
+          "import hub"
+        ]
+      },
+      {
+        "file": "apps/backend/tests/test_router_phase1c.py",
+        "score": 42,
+        "reasons": [
+          "entrypoint",
+          "data model",
+          "import hub"
+        ]
+      },
+      {
+        "file": "apps/backend/main.py",
+        "score": 20,
+        "reasons": [
+          "entrypoint",
+          "import hub"
+        ]
+      },
+      {
+        "file": "apps/backend/model_router/router.py",
+        "score": 20,
+        "reasons": [
+          "entrypoint",
+          "import hub"
+        ]
+      },
+      {
+        "file": "apps/backend/tests/test_actions_phase2a.py",
+        "score": 16,
+        "reasons": [
+          "entrypoint",
+          "import hub"
+        ]
+      },
+      {
+        "file": "apps/backend/tests/test_context.py",
+        "score": 16,
+        "reasons": [
+          "entrypoint",
+          "import hub"
+        ]
+      },
+      {
+        "file": "apps/desktop/src/pages/HomePage.tsx",
+        "score": 15,
+        "reasons": [
+          "import hub"
+        ]
+      },
+      {
+        "file": "apps/backend/tests/test_models_phase1c.py",
+        "score": 14,
+        "reasons": [
+          "entrypoint",
+          "import hub"
+        ]
+      },
+      {
+        "file": "apps/backend/tests/test_provider_settings_phase1f.py",
+        "score": 13,
+        "reasons": [
+          "entrypoint",
+          "import hub"
+        ]
+      },
+      {
+        "file": "apps/backend/tests/test_workspace.py",
+        "score": 13,
+        "reasons": [
+          "entrypoint",
+          "import hub"
+        ]
+      },
+      {
+        "file": "apps/backend/model_router/base.py",
+        "score": 12,
+        "reasons": [
+          "data model",
+          "import hub"
+        ]
+      },
+      {
+        "file": "apps/backend/tests/test_agent_phase1c.py",
+        "score": 12,
+        "reasons": [
+          "entrypoint",
+          "import hub"
+        ]
+      },
+      {
+        "file": "apps/backend/tests/test_health.py",
+        "score": 12,
+        "reasons": [
+          "entrypoint",
+          "import hub"
+        ]
+      },
+      {
+        "file": "apps/desktop/src/pages/OverlayPage.tsx",
+        "score": 12,
+        "reasons": [
+          "import hub"
+        ]
+      },
+      {
+        "file": "apps/backend/context_engine/clipboard.py",
+        "score": 11,
+        "reasons": [
+          "data model",
+          "import hub"
+        ]
+      },
+      {
+        "file": "apps/backend/model_router/ollama_provider.py",
+        "score": 10,
+        "reasons": [
+          "data model",
+          "import hub"
+        ]
+      }
+    ],
+    "architectureStyle": "workspace full-stack monorepo",
+    "notes": [
+      "Detected 15 likely entrypoint(s).",
+      "Detected 36 route or route-hint record(s).",
+      "Detected 322 lightweight import record(s).",
+      "Detected 0 workspace package relationship(s).",
+      "Detected 0 alias pattern(s) from 1 config file(s).",
+      "Resolved 88 internal import(s); 4 remained unresolved.",
+      "Detected 1 base path hint(s) from tsconfig/jsconfig."
+    ]
+  },
+  "dependencyGraph": {
+    "internalEdges": [
+      {
+        "from": "apps/backend/model_router/lmstudio_provider.py",
+        "to": "apps/backend/model_router/openai_compatible_provider.py",
+        "kind": "python-from-import"
+      },
+      {
+        "from": "apps/backend/model_router/ollama_provider.py",
+        "to": "apps/backend/model_router/base.py",
+        "kind": "python-from-import"
+      },
+      {
+        "from": "apps/backend/model_router/openai_compatible_provider.py",
+        "to": "apps/backend/model_router/base.py",
+        "kind": "python-from-import"
+      },
+      {
+        "from": "apps/backend/model_router/router.py",
+        "to": "apps/backend/model_router/base.py",
+        "kind": "python-from-import"
+      },
+      {
+        "from": "apps/backend/model_router/router.py",
+        "to": "apps/backend/model_router/lmstudio_provider.py",
+        "kind": "python-from-import"
+      },
+      {
+        "from": "apps/backend/model_router/router.py",
+        "to": "apps/backend/model_router/ollama_provider.py",
+        "kind": "python-from-import"
+      },
+      {
+        "from": "apps/backend/model_router/router.py",
+        "to": "apps/backend/model_router/openai_compatible_provider.py",
+        "kind": "python-from-import"
+      },
+      {
+        "from": "apps/desktop/src/App.tsx",
+        "to": "apps/desktop/src/components/Sidebar.tsx",
+        "kind": "import"
+      },
+      {
+        "from": "apps/desktop/src/App.tsx",
+        "to": "apps/desktop/src/i18n/index.tsx",
+        "kind": "import"
+      },
+      {
+        "from": "apps/desktop/src/App.tsx",
+        "to": "apps/desktop/src/pages/HelpPage.tsx",
+        "kind": "import"
+      },
+      {
+        "from": "apps/desktop/src/App.tsx",
+        "to": "apps/desktop/src/pages/HomePage.tsx",
+        "kind": "import"
+      },
+      {
+        "from": "apps/desktop/src/App.tsx",
+        "to": "apps/desktop/src/pages/LogsPage.tsx",
+        "kind": "import"
+      },
+      {
+        "from": "apps/desktop/src/App.tsx",
+        "to": "apps/desktop/src/pages/OverlayPage.tsx",
+        "kind": "import"
+      },
+      {
+        "from": "apps/desktop/src/App.tsx",
+        "to": "apps/desktop/src/pages/ServicesPage.tsx",
+        "kind": "import"
+      },
+      {
+        "from": "apps/desktop/src/App.tsx",
+        "to": "apps/desktop/src/pages/SettingsPage.tsx",
+        "kind": "import"
+      },
+      {
+        "from": "apps/desktop/src/App.tsx",
+        "to": "apps/desktop/src/pages/WorkspacePage.tsx",
+        "kind": "import"
+      },
+      {
+        "from": "apps/desktop/src/components/ActionButtons.tsx",
+        "to": "apps/desktop/src/i18n/index.tsx",
+        "kind": "import"
+      },
+      {
+        "from": "apps/desktop/src/components/CommandCenterCards.tsx",
+        "to": "apps/desktop/src/i18n/index.tsx",
+        "kind": "import"
+      },
+      {
+        "from": "apps/desktop/src/components/HealthIndicator.tsx",
+        "to": "apps/desktop/src/i18n/index.tsx",
+        "kind": "import"
+      },
+      {
+        "from": "apps/desktop/src/components/HealthIndicator.tsx",
+        "to": "apps/desktop/src/lib/api.ts",
+        "kind": "import"
+      },
+      {
+        "from": "apps/desktop/src/components/ManualVerificationChecklist.tsx",
+        "to": "apps/desktop/src/i18n/index.tsx",
+        "kind": "import"
+      },
+      {
+        "from": "apps/desktop/src/components/OnboardingChecklistCard.tsx",
+        "to": "apps/desktop/src/i18n/index.tsx",
+        "kind": "import"
+      },
+      {
+        "from": "apps/desktop/src/components/Overlay.tsx",
+        "to": "apps/desktop/src/i18n/index.tsx",
+        "kind": "import"
+      },
+      {
+        "from": "apps/desktop/src/components/OverlaySelectedInputMiniPanel.tsx",
+        "to": "apps/desktop/src/components/ActionButtons.tsx",
+        "kind": "import"
+      },
+      {
+        "from": "apps/desktop/src/components/OverlaySelectedInputMiniPanel.tsx",
+        "to": "apps/desktop/src/i18n/index.tsx",
+        "kind": "import"
+      },
+      {
+        "from": "apps/desktop/src/components/ProviderGuidancePanel.tsx",
+        "to": "apps/desktop/src/i18n/index.tsx",
+        "kind": "import"
+      },
+      {
+        "from": "apps/desktop/src/components/ProviderManualStartGuidanceStrip.tsx",
+        "to": "apps/desktop/src/components/ProviderSelector.tsx",
+        "kind": "import"
+      },
+      {
+        "from": "apps/desktop/src/components/ProviderManualStartGuidanceStrip.tsx",
+        "to": "apps/desktop/src/i18n/index.tsx",
+        "kind": "import"
+      },
+      {
+        "from": "apps/desktop/src/components/ProviderReadinessMatrix.tsx",
+        "to": "apps/desktop/src/components/ProviderSelector.tsx",
+        "kind": "import"
+      },
+      {
+        "from": "apps/desktop/src/components/ProviderReadinessMatrix.tsx",
+        "to": "apps/desktop/src/i18n/index.tsx",
+        "kind": "import"
+      },
+      {
+        "from": "apps/desktop/src/components/ProviderSelector.tsx",
+        "to": "apps/desktop/src/components/ProviderGuidancePanel.tsx",
+        "kind": "import"
+      },
+      {
+        "from": "apps/desktop/src/components/ProviderSelector.tsx",
+        "to": "apps/desktop/src/i18n/index.tsx",
+        "kind": "import"
+      },
+      {
+        "from": "apps/desktop/src/components/ResultPreview.tsx",
+        "to": "apps/desktop/src/components/ActionButtons.tsx",
+        "kind": "import"
+      },
+      {
+        "from": "apps/desktop/src/components/ResultPreview.tsx",
+        "to": "apps/desktop/src/i18n/index.tsx",
+        "kind": "import"
+      },
+      {
+        "from": "apps/desktop/src/components/SafePromptTemplates.tsx",
+        "to": "apps/desktop/src/i18n/index.tsx",
+        "kind": "import"
+      },
+      {
+        "from": "apps/desktop/src/components/SelectedInputPanel.tsx",
+        "to": "apps/desktop/src/components/ActionButtons.tsx",
+        "kind": "import"
+      },
+      {
+        "from": "apps/desktop/src/components/SelectedInputPanel.tsx",
+        "to": "apps/desktop/src/i18n/index.tsx",
+        "kind": "import"
+      },
+      {
+        "from": "apps/desktop/src/components/Sidebar.tsx",
+        "to": "apps/desktop/src/i18n/index.tsx",
+        "kind": "import"
+      },
+      {
+        "from": "apps/desktop/src/i18n/en.ts",
+        "to": "apps/desktop/src/i18n/messages.ts",
+        "kind": "import"
+      },
+      {
+        "from": "apps/desktop/src/i18n/index.tsx",
+        "to": "apps/desktop/src/i18n/en.ts",
+        "kind": "import"
+      },
+      {
+        "from": "apps/desktop/src/i18n/index.tsx",
+        "to": "apps/desktop/src/i18n/messages.ts",
+        "kind": "import"
+      },
+      {
+        "from": "apps/desktop/src/i18n/messages.ts",
+        "to": "apps/desktop/src/i18n/ar.ts",
+        "kind": "import"
+      },
+      {
+        "from": "apps/desktop/src/lib/workspace.ts",
+        "to": "apps/desktop/src/components/ActionButtons.tsx",
+        "kind": "import"
+      },
+      {
+        "from": "apps/desktop/src/lib/workspace.ts",
+        "to": "apps/desktop/src/lib/api.ts",
+        "kind": "import"
+      },
+      {
+        "from": "apps/desktop/src/main.tsx",
+        "to": "apps/desktop/src/App.tsx",
+        "kind": "import"
+      },
+      {
+        "from": "apps/desktop/src/main.tsx",
+        "to": "apps/desktop/src/i18n/index.tsx",
+        "kind": "import"
+      },
+      {
+        "from": "apps/desktop/src/pages/HelpPage.tsx",
+        "to": "apps/desktop/src/components/ManualVerificationChecklist.tsx",
+        "kind": "import"
+      },
+      {
+        "from": "apps/desktop/src/pages/HelpPage.tsx",
+        "to": "apps/desktop/src/i18n/index.tsx",
+        "kind": "import"
+      },
+      {
+        "from": "apps/desktop/src/pages/HomePage.tsx",
+        "to": "apps/desktop/src/components/ActionButtons.tsx",
+        "kind": "import"
+      },
+      {
+        "from": "apps/desktop/src/pages/HomePage.tsx",
+        "to": "apps/desktop/src/components/CommandCenterCards.tsx",
+        "kind": "import"
+      },
+      {
+        "from": "apps/desktop/src/pages/HomePage.tsx",
+        "to": "apps/desktop/src/components/HealthIndicator.tsx",
+        "kind": "import"
+      },
+      {
+        "from": "apps/desktop/src/pages/HomePage.tsx",
+        "to": "apps/desktop/src/components/OnboardingChecklistCard.tsx",
+        "kind": "import"
+      },
+      {
+        "from": "apps/desktop/src/pages/HomePage.tsx",
+        "to": "apps/desktop/src/components/ProviderGuidancePanel.tsx",
+        "kind": "import"
+      },
+      {
+        "from": "apps/desktop/src/pages/HomePage.tsx",
+        "to": "apps/desktop/src/components/ProviderManualStartGuidanceStrip.tsx",
+        "kind": "import"
+      },
+      {
+        "from": "apps/desktop/src/pages/HomePage.tsx",
+        "to": "apps/desktop/src/components/ProviderSelector.tsx",
+        "kind": "import"
+      },
+      {
+        "from": "apps/desktop/src/pages/HomePage.tsx",
+        "to": "apps/desktop/src/components/ResultPreview.tsx",
+        "kind": "import"
+      },
+      {
+        "from": "apps/desktop/src/pages/HomePage.tsx",
+        "to": "apps/desktop/src/components/SafePromptTemplates.tsx",
+        "kind": "import"
+      },
+      {
+        "from": "apps/desktop/src/pages/HomePage.tsx",
+        "to": "apps/desktop/src/components/SelectedInputPanel.tsx",
+        "kind": "import"
+      },
+      {
+        "from": "apps/desktop/src/pages/HomePage.tsx",
+        "to": "apps/desktop/src/i18n/index.tsx",
+        "kind": "import"
+      },
+      {
+        "from": "apps/desktop/src/pages/HomePage.tsx",
+        "to": "apps/desktop/src/lib/api.ts",
+        "kind": "import"
+      },
+      {
+        "from": "apps/desktop/src/pages/HomePage.tsx",
+        "to": "apps/desktop/src/lib/workspace.ts",
+        "kind": "import"
+      },
+      {
+        "from": "apps/desktop/src/pages/LogsPage.tsx",
+        "to": "apps/desktop/src/i18n/index.tsx",
+        "kind": "import"
+      },
+      {
+        "from": "apps/desktop/src/pages/LogsPage.tsx",
+        "to": "apps/desktop/src/lib/api.ts",
+        "kind": "import"
+      },
+      {
+        "from": "apps/desktop/src/pages/OverlayPage.tsx",
+        "to": "apps/desktop/src/components/ActionButtons.tsx",
+        "kind": "import"
+      },
+      {
+        "from": "apps/desktop/src/pages/OverlayPage.tsx",
+        "to": "apps/desktop/src/components/OnboardingChecklistCard.tsx",
+        "kind": "import"
+      },
+      {
+        "from": "apps/desktop/src/pages/OverlayPage.tsx",
+        "to": "apps/desktop/src/components/OverlaySelectedInputMiniPanel.tsx",
+        "kind": "import"
+      },
+      {
+        "from": "apps/desktop/src/pages/OverlayPage.tsx",
+        "to": "apps/desktop/src/components/ProviderManualStartGuidanceStrip.tsx",
+        "kind": "import"
+      },
+      {
+        "from": "apps/desktop/src/pages/OverlayPage.tsx",
+        "to": "apps/desktop/src/components/ProviderSelector.tsx",
+        "kind": "import"
+      },
+      {
+        "from": "apps/desktop/src/pages/OverlayPage.tsx",
+        "to": "apps/desktop/src/components/ResultPreview.tsx",
+        "kind": "import"
+      },
+      {
+        "from": "apps/desktop/src/pages/OverlayPage.tsx",
+        "to": "apps/desktop/src/components/SafePromptTemplates.tsx",
+        "kind": "import"
+      },
+      {
+        "from": "apps/desktop/src/pages/OverlayPage.tsx",
+        "to": "apps/desktop/src/i18n/index.tsx",
+        "kind": "import"
+      },
+      {
+        "from": "apps/desktop/src/pages/OverlayPage.tsx",
+        "to": "apps/desktop/src/lib/api.ts",
+        "kind": "import"
+      },
+      {
+        "from": "apps/desktop/src/pages/OverlayPage.tsx",
+        "to": "apps/desktop/src/lib/workspace.ts",
+        "kind": "import"
+      },
+      {
+        "from": "apps/desktop/src/pages/ServicesPage.tsx",
+        "to": "apps/desktop/src/components/CommandCenterCards.tsx",
+        "kind": "import"
+      },
+      {
+        "from": "apps/desktop/src/pages/ServicesPage.tsx",
+        "to": "apps/desktop/src/components/HealthIndicator.tsx",
+        "kind": "import"
+      },
+      {
+        "from": "apps/desktop/src/pages/ServicesPage.tsx",
+        "to": "apps/desktop/src/components/ProviderManualStartGuidanceStrip.tsx",
+        "kind": "import"
+      },
+      {
+        "from": "apps/desktop/src/pages/ServicesPage.tsx",
+        "to": "apps/desktop/src/components/ProviderReadinessMatrix.tsx",
+        "kind": "import"
+      },
+      {
+        "from": "apps/desktop/src/pages/ServicesPage.tsx",
+        "to": "apps/desktop/src/components/ProviderSelector.tsx",
+        "kind": "import"
+      },
+      {
+        "from": "apps/desktop/src/pages/ServicesPage.tsx",
+        "to": "apps/desktop/src/i18n/index.tsx",
+        "kind": "import"
+      },
+      {
+        "from": "apps/desktop/src/pages/ServicesPage.tsx",
+        "to": "apps/desktop/src/lib/api.ts",
+        "kind": "import"
+      },
+      {
+        "from": "apps/desktop/src/pages/SettingsPage.tsx",
+        "to": "apps/desktop/src/components/ProviderGuidancePanel.tsx",
+        "kind": "import"
+      },
+      {
+        "from": "apps/desktop/src/pages/SettingsPage.tsx",
+        "to": "apps/desktop/src/components/ProviderReadinessMatrix.tsx",
+        "kind": "import"
+      },
+      {
+        "from": "apps/desktop/src/pages/SettingsPage.tsx",
+        "to": "apps/desktop/src/components/ProviderSelector.tsx",
+        "kind": "import"
+      },
+      {
+        "from": "apps/desktop/src/pages/SettingsPage.tsx",
+        "to": "apps/desktop/src/i18n/index.tsx",
+        "kind": "import"
+      },
+      {
+        "from": "apps/desktop/src/pages/SettingsPage.tsx",
+        "to": "apps/desktop/src/lib/api.ts",
+        "kind": "import"
+      },
+      {
+        "from": "apps/desktop/src/pages/WorkspacePage.tsx",
+        "to": "apps/desktop/src/i18n/index.tsx",
+        "kind": "import"
+      },
+      {
+        "from": "apps/desktop/src/pages/WorkspacePage.tsx",
+        "to": "apps/desktop/src/lib/api.ts",
+        "kind": "import"
+      },
+      {
+        "from": "apps/desktop/src/pages/WorkspacePage.tsx",
+        "to": "apps/desktop/src/lib/workspace.ts",
+        "kind": "import"
+      }
+    ],
+    "externalPackages": [
+      "__future__",
+      "react",
+      "config",
+      "datetime",
+      "typing",
+      "fastapi",
+      "main",
+      "httpx",
+      "pathlib",
+      "pydantic",
+      "react-router-dom",
+      "api",
+      "context_engine.clipboard",
+      "context_engine.context_builder",
+      "core",
+      "electron",
+      "storage.db",
+      "actions.executor",
+      "actions.store",
+      "agent.prompts",
+      "child_process",
+      "context_engine.active_window",
+      "core.provider_settings",
+      "ctypes",
+      "dataclasses",
+      "fs",
+      "model_router",
+      "model_router.base",
+      "model_router.router",
+      "path",
+      "urllib.parse",
+      "@vitejs/plugin-react",
+      "abc",
+      "actions",
+      "actions.safety",
+      "agent.planner",
+      "aiosqlite\nimport os\n\nDB_PATH",
+      "api.actions",
+      "api.agent",
+      "api.context",
+      "api.health",
+      "api.logs",
+      "api.models",
+      "api.workspace",
+      "ASGITransport\nfrom main import app",
+      "AsyncClient\nimport pytest\nimport pytest_asyncio\n\nfrom api import actions as actions_api\nfrom main import app\n\n\nasync def _noop_log",
+      "asyncio\nfrom datetime import datetime",
+      "asyncio\nfrom typing import Any\n\nfrom httpx import ASGITransport",
+      "clear_clipboard",
+      "context_builder",
+      "context_engine",
+      "context_engine.screenshot",
+      "context_engine.selected_text",
+      "contextlib",
+      "ctypes\nimport os\nimport sys\nfrom ctypes import wintypes\nfrom pathlib import Path\n\nPROCESS_QUERY_LIMITED_INFORMATION",
+      "ctypes\nimport os\nimport sys\nimport time\nfrom ctypes import wintypes\nfrom dataclasses import dataclass",
+      "ctypes\nimport os\nimport sys\nimport time\nfrom typing import Callable\n\nfrom config import settings\nfrom context_engine.active_window import get_active_window\nfrom context_engine.clipboard import ClipboardSnapshot",
+      "ctypes\nimport time\nfrom typing import Callable\n\nimport pyperclip\n\nfrom config import settings\n\n\ndef _default_send_paste_shortcut",
+      "Dict",
+      "dotenv",
+      "enum",
+      "fastapi.middleware.cors",
+      "field\n\nCF_UNICODETEXT",
+      "get_clipboard_snapshot",
+      "get_clipboard_snapshot\nfrom context_engine.screenshot import capture_screenshot_metadata\nfrom context_engine.selected_text import get_selected_text\n\n\ndef _truncate_preview",
+      "json\nfrom datetime import datetime",
+      "json\nfrom typing import Any",
+      "json\nimport re\nfrom datetime import datetime",
+      "json\nimport re\nfrom typing import Any\nfrom urllib.parse import urlsplit\n\nfrom config import settings\n\n\nVALID_PROVIDER_IDS",
+      "List\n\nfrom config import settings\n\nALLOWED_LAST_TEST_FIELDS",
+      "load_provider_settings\nfrom core import provider_tests as provider_tests_module\nfrom .base import sanitize_base_url",
+      "model_router.ollama_provider",
+      "normalize_model_identifiers\n\n\nclass OllamaProvider",
+      "normalize_model_identifiers\n\n\nclass OpenAICompatibleProvider",
+      "os\n\nimport uvicorn\n\nfrom main import app\n\n\ndef main",
+      "os\nfrom dotenv import load_dotenv\n\nload_dotenv",
+      "os\nimport tempfile\nimport uuid\n\nfrom config import settings\n\ntry",
+      "os\nimport time\n\nimport httpx\n\nfrom .base import BaseProvider",
+      "PIL",
+      "pytest\n\nfrom agent.prompts import build_prompt\n\n\ndef test_prompt_truncation_and_redaction_work",
+      "pytest\n\nfrom api import agent as agent_api\nfrom main import app",
+      "pytest\n\nfrom api import models as models_api\nfrom main import app\nfrom model_router import router as router_module\nfrom core import provider_tests as provider_tests_module\n\n\ndef build_provider_settings",
+      "pytest\n\nfrom config import settings\nfrom core import provider_settings as provider_settings_module\nfrom model_router.base import normalize_model_identifiers\n\n\ndef test_normalize_model_identifiers_trims_and_deduplicates",
+      "pytest\n\nfrom context_engine import active_window",
+      "pytest\nfrom httpx import AsyncClient",
+      "pytest\nimport httpx\n\nfrom model_router.base import BaseProvider\nfrom model_router import router as router_module\n\n\ndef build_provider_settings",
+      "pytest\nimport pytest_asyncio\n\nfrom main import app\nfrom storage import db as storage_db",
+      "re\n\nfrom config import settings\nfrom context_engine.active_window import get_active_window\nfrom context_engine.clipboard import ClipboardSnapshot",
+      "re\n\nUNSAFE_PATTERNS",
+      "re\nimport time\nfrom urllib.parse import urlsplit",
+      "re\nimport uuid\nfrom datetime import datetime",
+      "react-dom",
+      "sanitize_error_message\nfrom .lmstudio_provider import LMStudioProvider\nfrom .ollama_provider import OllamaProvider\nfrom .openai_compatible_provider import OpenAICompatibleProvider\n\n\nDEFAULT_TEST_PROMPT",
+      "screenshot",
+      "selected_text\nfrom context_engine.clipboard import ClipboardSnapshot\nfrom main import app",
+      "set_clipboard_text\n\nVK_CONTROL",
+      "storage",
+      "time\n\nimport httpx\n\nfrom .base import BaseProvider",
+      "timezone\nfrom typing import Any\n\nfrom config import settings\n\n\nRISK_LEVELS",
+      "timezone\nfrom typing import Any\n\nimport aiosqlite\n\nfrom config import settings\nfrom storage.db import DB_PATH",
+      "timezone\nfrom typing import Any\n\nimport aiosqlite\n\nfrom config import settings\nfrom storage.db import get_db\n\nALLOWED_ITEM_TYPES",
+      "timezone\nimport httpx\n\nfrom core.provider_settings import get_effective_model",
+      "urlunsplit\n\nimport httpx\n\n\n_SECRET_PATTERNS",
+      "vite",
+      "vite-plugin-electron",
+      "vite-plugin-electron-renderer",
+      "workspace.store"
+    ],
+    "topImportedExternalPackages": [
+      {
+        "packageName": "__future__",
+        "count": 23
+      },
+      {
+        "packageName": "react",
+        "count": 16
+      },
+      {
+        "packageName": "config",
+        "count": 15
+      },
+      {
+        "packageName": "datetime",
+        "count": 10
+      },
+      {
+        "packageName": "typing",
+        "count": 10
+      },
+      {
+        "packageName": "fastapi",
+        "count": 8
+      },
+      {
+        "packageName": "main",
+        "count": 7
+      },
+      {
+        "packageName": "httpx",
+        "count": 6
+      },
+      {
+        "packageName": "pathlib",
+        "count": 5
+      },
+      {
+        "packageName": "pydantic",
+        "count": 4
+      }
+    ],
+    "topImportedInternalFiles": [
+      {
+        "file": "apps/desktop/src/i18n/index.tsx",
+        "count": 24
+      },
+      {
+        "file": "apps/desktop/src/lib/api.ts",
+        "count": 8
+      },
+      {
+        "file": "apps/desktop/src/components/ActionButtons.tsx",
+        "count": 6
+      },
+      {
+        "file": "apps/desktop/src/components/ProviderSelector.tsx",
+        "count": 6
+      },
+      {
+        "file": "apps/backend/model_router/base.py",
+        "count": 3
+      },
+      {
+        "file": "apps/desktop/src/components/ProviderGuidancePanel.tsx",
+        "count": 3
+      },
+      {
+        "file": "apps/desktop/src/components/ProviderManualStartGuidanceStrip.tsx",
+        "count": 3
+      },
+      {
+        "file": "apps/desktop/src/lib/workspace.ts",
+        "count": 3
+      },
+      {
+        "file": "apps/backend/model_router/openai_compatible_provider.py",
+        "count": 2
+      },
+      {
+        "file": "apps/desktop/src/components/CommandCenterCards.tsx",
+        "count": 2
+      }
+    ],
+    "highFanInFiles": [
+      {
+        "file": "apps/desktop/src/i18n/index.tsx",
+        "count": 24
+      },
+      {
+        "file": "apps/desktop/src/lib/api.ts",
+        "count": 8
+      },
+      {
+        "file": "apps/desktop/src/components/ActionButtons.tsx",
+        "count": 6
+      },
+      {
+        "file": "apps/desktop/src/components/ProviderSelector.tsx",
+        "count": 6
+      },
+      {
+        "file": "apps/backend/model_router/base.py",
+        "count": 3
+      }
+    ],
+    "highFanOutFiles": [
+      {
+        "file": "apps/desktop/src/pages/HomePage.tsx",
+        "count": 15
+      },
+      {
+        "file": "apps/backend/main.py",
+        "count": 12
+      },
+      {
+        "file": "apps/backend/model_router/router.py",
+        "count": 12
+      },
+      {
+        "file": "apps/desktop/src/App.tsx",
+        "count": 11
+      },
+      {
+        "file": "apps/desktop/src/pages/OverlayPage.tsx",
+        "count": 11
+      }
+    ],
+    "possibleCycles": [],
+    "notes": [
+      "Resolved 88 internal dependency edge(s).",
+      "Detected 107 unique external package import(s).",
+      "Cycle detection is limited to small resolvable mutual-import patterns.",
+      "4 internal import(s) could not be resolved to repo files."
+    ]
+  },
+  "architectureRisks": [
+    {
+      "severity": "warning",
+      "title": "Large route surface without tests",
+      "detail": "Detected 36 routes or route hints, but no tests were found.",
+      "suggestedFix": "Add smoke or integration tests around the primary route surface."
+    },
+    {
+      "severity": "warning",
+      "title": "Monorepo layout lacks explicit workspace config",
+      "detail": "The repository looks like a monorepo, but no clear workspace configuration was detected.",
+      "suggestedFix": "Add npm, pnpm, or yarn workspace config so tooling and contributors can resolve package boundaries reliably."
+    },
+    {
+      "severity": "info",
+      "title": "Database layer lacks clear schema documentation",
+      "detail": "Database-related files were detected, but no obvious schema or migration documentation signal was found.",
+      "suggestedFix": "Document migrations, schema ownership, or data model conventions in README or dedicated docs."
+    },
+    {
+      "severity": "info",
+      "title": "Larger project without CI",
+      "detail": "Detected 192 scanned files, but no CI workflow was found.",
+      "suggestedFix": "Add CI to run tests, lint, and build checks for repeatable validation."
+    }
+  ],
+  "hasHealthEndpoint": true,
+  "detectedHealthRoutes": [
+    "/health"
+  ],
+  "qualitySignals": {
+    "hasReadme": true,
+    "hasLicense": false,
+    "hasEnvExample": true,
+    "hasTests": false,
+    "hasTypeScriptConfig": false,
+    "hasLintScript": false,
+    "hasBuildScript": false,
+    "hasStartScript": false,
+    "hasDevScript": true,
+    "hasDockerfile": false,
+    "hasDeploymentDocs": false,
+    "hasCiWorkflow": false,
+    "hasWorkspaceConfig": false,
+    "hasRootLockfile": true
+  },
+  "securitySignals": {
+    "envFilesDetected": [],
+    "envIgnoredInGitignore": true,
+    "envRiskWarning": false,
+    "possibleHardcodedSecrets": [
+      {
+        "file": "apps/backend/tests/test_models_phase1c.py",
+        "line": 193,
+        "pattern": "Generic secret assignment"
+      }
+    ]
+  },
+  "healthScore": 35,
+  "healthBreakdown": {
+    "documentation": 12,
+    "structure": 0,
+    "security": 18,
+    "testing": 0,
+    "deploymentReadiness": 0,
+    "aiReadiness": 5
+  },
+  "improvementItems": [
+    {
+      "id": "RR-007",
+      "title": "Review possible hardcoded secrets",
+      "category": "security",
+      "severity": "critical",
+      "effort": "low",
+      "impact": "high",
+      "source": "security signals",
+      "problem": "Potential hardcoded secret patterns were detected in 1 location(s).",
+      "recommendedFix": "Replace inline secrets with environment variables. Rotate any exposed credentials. Add the affected files to .gitignore only if they should not be tracked.",
+      "acceptanceCriteria": [
+        "No secrets are hardcoded in source files",
+        "Required env variables are listed in .env.example",
+        "Exposed credentials are rotated"
+      ],
+      "suggestedFiles": [
+        "apps/backend/tests/test_models_phase1c.py"
+      ],
+      "relatedFacts": [
+        "secretFindings: 1"
+      ],
+      "safeForAgent": true
+    },
+    {
+      "id": "RR-001",
+      "title": "Add CI workflow",
+      "category": "ci",
+      "severity": "warning",
+      "effort": "low",
+      "impact": "high",
+      "source": "CI detection",
+      "problem": "No continuous integration workflow was detected. Automated testing and builds improve reliability and contributor confidence.",
+      "recommendedFix": "Add .github/workflows/ci.yml (or equivalent) that installs dependencies, runs lint/typecheck/build, and runs tests on pull requests and pushes to main.",
+      "acceptanceCriteria": [
+        "CI runs on push to main and on pull requests",
+        "CI installs dependencies",
+        "CI runs lint/build/test steps",
+        "CI passes on the current codebase"
+      ],
+      "suggestedFiles": [
+        ".github/workflows/ci.yml"
+      ],
+      "relatedFacts": [
+        "filesScanned: 192"
+      ],
+      "safeForAgent": true
+    },
+    {
+      "id": "RR-002",
+      "title": "Add automated tests",
+      "category": "testing",
+      "severity": "warning",
+      "effort": "medium",
+      "impact": "high",
+      "source": "quality signals",
+      "problem": "No automated tests were detected. Tests reduce regression risk and increase confidence when refactoring or adding features.",
+      "recommendedFix": "Add at least one smoke test that starts the application (or imports the main module) and asserts it does not throw. Choose a test runner that matches your stack.",
+      "acceptanceCriteria": [
+        "A test file exists in the project",
+        "The test can be run with a single command",
+        "At least one test passes"
+      ],
+      "suggestedFiles": [
+        "src/__tests__/smoke.spec.ts",
+        "tests/smoke.test.js",
+        "test_main.py"
+      ],
+      "relatedFacts": [
+        "hasTests: false"
+      ],
+      "safeForAgent": true
+    },
+    {
+      "id": "RR-005",
+      "title": "Review high fan-out file: apps/desktop/src/pages/HomePage.tsx",
+      "category": "architecture",
+      "severity": "info",
+      "effort": "high",
+      "impact": "medium",
+      "source": "dependency graph",
+      "problem": "The file apps/desktop/src/pages/HomePage.tsx imports from 15 other internal files, which may indicate it has too many responsibilities.",
+      "recommendedFix": "Consider extracting cohesive groups of imports into separate modules or introducing an intermediate layer. Do not refactor unless behavior is well tested.",
+      "acceptanceCriteria": [
+        "Responsibilities are clearly separated or documented",
+        "Tests pass after any refactoring"
+      ],
+      "suggestedFiles": [
+        "apps/desktop/src/pages/HomePage.tsx"
+      ],
+      "relatedFacts": [
+        "fanOut: 15"
+      ],
+      "safeForAgent": false
+    },
+    {
+      "id": "RR-006",
+      "title": "Add database schema or migration documentation",
+      "category": "documentation",
+      "severity": "info",
+      "effort": "low",
+      "impact": "medium",
+      "source": "architecture detection",
+      "problem": "Database-related files were detected, but no schema or migration documentation was found.",
+      "recommendedFix": "Document migrations, schema ownership, or data model conventions in README or a dedicated docs/ folder.",
+      "acceptanceCriteria": [
+        "Database conventions are documented",
+        "Migration workflow is described"
+      ],
+      "suggestedFiles": [
+        "README.md",
+        "docs/database.md"
+      ],
+      "relatedFacts": [
+        "database layer detected"
+      ],
+      "safeForAgent": true
+    },
+    {
+      "id": "RR-008",
+      "title": "Add lint script",
+      "category": "developer-experience",
+      "severity": "info",
+      "effort": "low",
+      "impact": "medium",
+      "source": "quality signals",
+      "problem": "No lint script was detected. Consistent code style reduces review friction and catches simple errors.",
+      "recommendedFix": "Add a lint script to package.json (e.g., eslint . or prettier --check .) and run it in CI.",
+      "acceptanceCriteria": [
+        "Lint script exists in package.json",
+        "Lint passes on the current codebase"
+      ],
+      "suggestedFiles": [
+        "package.json"
+      ],
+      "relatedFacts": [
+        "hasLintScript: false"
+      ],
+      "safeForAgent": true
+    },
+    {
+      "id": "RR-004",
+      "title": "Fix unresolved alias imports",
+      "category": "architecture",
+      "severity": "info",
+      "effort": "medium",
+      "impact": "medium",
+      "source": "module resolution",
+      "problem": "There are 4 unresolved internal imports. These may indicate broken paths, missing alias config, or dynamic imports that the scanner could not resolve.",
+      "recommendedFix": "Review tsconfig.json / jsconfig.json / vite.config aliases and ensure they match actual source directories. Check for typos in import paths.",
+      "acceptanceCriteria": [
+        "All alias patterns resolve to existing directories",
+        "No broken internal imports remain"
+      ],
+      "suggestedFiles": [
+        "apps/desktop/tsconfig.json"
+      ],
+      "relatedFacts": [
+        "unresolvedImports: 4"
+      ],
+      "safeForAgent": true
+    },
+    {
+      "id": "RR-003",
+      "title": "Add a license",
+      "category": "documentation",
+      "severity": "info",
+      "effort": "low",
+      "impact": "low",
+      "source": "quality signals",
+      "problem": "No LICENSE file was detected. Without a license, usage rights are unclear.",
+      "recommendedFix": "Choose an open-source license (e.g., MIT, Apache-2.0) or document the license in package metadata and add a LICENSE file.",
+      "acceptanceCriteria": [
+        "LICENSE file exists or license is declared in package metadata",
+        "License text is complete and correct"
+      ],
+      "suggestedFiles": [
+        "LICENSE",
+        "package.json"
+      ],
+      "relatedFacts": [
+        "hasLicense: false"
+      ],
+      "safeForAgent": true
+    }
+  ],
+  "healthDetails": {
+    "maxScore": 100,
+    "categoryMaxScores": {
+      "documentation": 20,
+      "structure": 20,
+      "security": 20,
+      "testing": 15,
+      "deploymentReadiness": 15,
+      "aiReadiness": 10
+    },
+    "penalties": [
+      {
+        "category": "documentation",
+        "pointsLost": 4,
+        "reason": "License file is missing.",
+        "recommendedFix": "Add a LICENSE file or document licensing clearly."
+      },
+      {
+        "category": "documentation",
+        "pointsLost": 4,
+        "reason": "Deployment documentation was not detected.",
+        "recommendedFix": "Add deployment or release instructions such as deploy.md, render.yaml, or vercel.json."
+      },
+      {
+        "category": "structure",
+        "pointsLost": 5,
+        "reason": "No primary project configuration file was detected.",
+        "recommendedFix": "Add tsconfig.json, pyproject.toml, setup.py, or setup.cfg so tooling can understand the project structure."
+      },
+      {
+        "category": "structure",
+        "pointsLost": 4,
+        "reason": "No lint script was detected.",
+        "recommendedFix": "Add a lint script so quality checks are repeatable."
+      },
+      {
+        "category": "structure",
+        "pointsLost": 4,
+        "reason": "No build script was detected.",
+        "recommendedFix": "Add a build script for reliable packaging or deployment."
+      },
+      {
+        "category": "structure",
+        "pointsLost": 2,
+        "reason": "No start script was detected.",
+        "recommendedFix": "Add a start script when the project has a runnable runtime entrypoint."
+      },
+      {
+        "category": "security",
+        "pointsLost": 2,
+        "reason": "Potential hardcoded secret patterns were detected.",
+        "recommendedFix": "Review flagged files, replace inline secrets with env variables, and rotate exposed credentials if needed."
+      },
+      {
+        "category": "testing",
+        "pointsLost": 10,
+        "reason": "No automated tests were detected.",
+        "recommendedFix": "Add unit or smoke tests for critical flows."
+      },
+      {
+        "category": "testing",
+        "pointsLost": 5,
+        "reason": "No dedicated testing tool was detected.",
+        "recommendedFix": "Add Vitest, Jest, Playwright, Cypress, or Pytest depending on project shape."
+      },
+      {
+        "category": "testing",
+        "pointsLost": 2,
+        "reason": "No CI workflow was detected.",
+        "recommendedFix": "Add CI automation such as GitHub Actions to run tests consistently."
+      },
+      {
+        "category": "deploymentReadiness",
+        "pointsLost": 7,
+        "reason": "No clear deployment target or Docker packaging was detected.",
+        "recommendedFix": "Add a Dockerfile or platform config such as vercel.json, netlify.toml, render.yaml, or railway.json."
+      },
+      {
+        "category": "deploymentReadiness",
+        "pointsLost": 4,
+        "reason": "Build automation is missing.",
+        "recommendedFix": "Add a build script so release artifacts can be produced consistently."
+      },
+      {
+        "category": "deploymentReadiness",
+        "pointsLost": 2,
+        "reason": "Runtime start command is missing.",
+        "recommendedFix": "Add a start script or document the runtime entrypoint clearly."
+      },
+      {
+        "category": "deploymentReadiness",
+        "pointsLost": 2,
+        "reason": "Deployment docs or config were not detected.",
+        "recommendedFix": "Add deployment guidance or CI/CD configuration."
+      },
+      {
+        "category": "deploymentReadiness",
+        "pointsLost": 2,
+        "reason": "No CI/CD workflow was detected.",
+        "recommendedFix": "Add CI workflows for build, test, or release automation."
+      },
+      {
+        "category": "aiReadiness",
+        "pointsLost": 2,
+        "reason": "Project typing/config context is limited.",
+        "recommendedFix": "Add or improve configuration files that define source layout and compiler/runtime expectations."
+      },
+      {
+        "category": "aiReadiness",
+        "pointsLost": 1,
+        "reason": "No build script is available for agent-driven validation.",
+        "recommendedFix": "Add a build script agents can run safely."
+      },
+      {
+        "category": "aiReadiness",
+        "pointsLost": 2,
+        "reason": "Open repo issues reduce autonomous task confidence.",
+        "recommendedFix": "Address the highest-priority issues before adding AI workflows."
+      },
+      {
+        "category": "structure",
+        "pointsLost": 6,
+        "reason": "Monorepo structure was detected without a clear workspace config.",
+        "recommendedFix": "Add npm, pnpm, or yarn workspace config so the repo layout is explicit."
+      },
+      {
+        "category": "structure",
+        "pointsLost": 2,
+        "reason": "No shared config package was detected in the monorepo.",
+        "recommendedFix": "Consider centralizing shared config such as lint, tsconfig, or tooling presets."
+      }
+    ]
+  },
+  "issues": [
+    "No tests detected.",
+    "No lint script found in package.json.",
+    "No build script found in package.json.",
+    "Potential hardcoded secret patterns detected.",
+    "Monorepo-like structure detected without a clear workspace config.",
+    "No deployment or CI signals were detected."
+  ],
+  "recommendedNextSteps": [
+    "Add smoke tests or unit tests to increase confidence in future scans.",
+    "Review flagged files for secrets and rotate any exposed credentials.",
+    "Add or fix workspace configuration so the monorepo structure is explicit.",
+    "Add deployment config, CI workflows, or deployment docs to improve release readiness.",
+    "Add smoke or integration tests around the primary route surface.",
+    "Add npm, pnpm, or yarn workspace config so tooling and contributors can resolve package boundaries reliably.",
+    "Document migrations, schema ownership, or data model conventions in README or dedicated docs.",
+    "Add CI to run tests, lint, and build checks for repeatable validation."
+  ]
+}

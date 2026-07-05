@@ -1,0 +1,28 @@
+# Node
+node_modules/
+dist/
+build/
+
+# Environment
+.env
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+*.egg-info/
+.pytest_cache/
+apps/backend/runtime/
+
+# Database
+*.db
+*.sqlite
+
+# Electron
+out/
+release/
+
+# OS
+.DS_Store
+Thumbs.db
