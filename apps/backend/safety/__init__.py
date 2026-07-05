@@ -1,1 +1,1 @@
-# Safety module - Abud OmniAgent
+# Safety module - OmniAgent

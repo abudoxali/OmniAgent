@@ -1,9 +1,9 @@
 {
   "metadata": {
     "scannedAt": "2026-06-27T22:36:30.065Z",
-    "projectName": "abud-omniagent",
-    "rootPath": "C:\\Users\\Abud\\Desktop\\Abud OmniAgent",
-    "outputPath": "C:\\Users\\Abud\\Desktop\\Abud OmniAgent\\.reporadar",
+    "projectName": "omniagent",
+    "rootPath": "C:\\Users\\OmniAgent\\Desktop\\OmniAgent",
+    "outputPath": "C:\\Users\\OmniAgent\\Desktop\\OmniAgent\\.reporadar",
     "totalFilesScanned": 192,
     "mainFolders": [
       "apps",
@@ -139,7 +139,7 @@
     "packageGraph": {
       "relationships": [],
       "orphanPackages": [
-        "abud-omniagent-desktop"
+        "omniagent-desktop"
       ],
       "sharedPackages": []
     }

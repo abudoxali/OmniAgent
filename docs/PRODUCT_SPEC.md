@@ -1,4 +1,4 @@
-# Abud OmniAgent - Product Spec
+# OmniAgent - Product Spec
 
 Version: `0.1.0`
 Updated: `2026-06-22`
@@ -6,7 +6,7 @@ Current phase: `Phase 0 - Project Foundation`
 
 ## Product Summary
 
-Abud OmniAgent is a Windows-first desktop assistant composed of:
+OmniAgent is a Windows-first desktop assistant composed of:
 
 - an Electron + React + TypeScript desktop shell
 - a Python FastAPI backend on `localhost:8000`

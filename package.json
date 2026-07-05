@@ -1,5 +1,5 @@
 {
-  "name": "abud-omniagent",
+  "name": "omniagent",
   "private": true,
   "scripts": {
     "install:all": "npm install --include=dev && powershell -ExecutionPolicy Bypass -File scripts/install-backend.ps1 && powershell -ExecutionPolicy Bypass -File scripts/install-desktop.ps1",

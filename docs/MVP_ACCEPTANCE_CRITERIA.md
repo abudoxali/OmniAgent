@@ -1,4 +1,4 @@
-# Abud OmniAgent - MVP Acceptance Criteria
+# OmniAgent - MVP Acceptance Criteria
 
 Version: `0.1.0`
 Updated: `2026-06-22`

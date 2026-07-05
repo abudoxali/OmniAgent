@@ -1,1 +1,1 @@
-# Storage module - Abud OmniAgent
+# Storage module - OmniAgent

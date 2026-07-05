@@ -1,4 +1,4 @@
-# Abud OmniAgent - Safety Rules
+# OmniAgent - Safety Rules
 
 Version: `0.1.0`
 Updated: `2026-06-22`

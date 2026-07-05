@@ -1,1 +1,1 @@
-# Agent module - Abud OmniAgent
+# Agent module - OmniAgent

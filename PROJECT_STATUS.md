@@ -8,7 +8,7 @@
 - **React/Vite Frontend Code**: `apps/desktop/src/`
 - **Electron Shell Code**: `apps/desktop/electron/`
 - **Python FastAPI Backend Source**: `apps/backend/`
-- **Windows Installer (Final Release)**: `apps/desktop/release/Abud OmniAgent Setup 0.1.0.exe`
+- **Windows Installer (Final Release)**: `apps/desktop/release/OmniAgent Setup 0.1.0.exe`
 
 ## Project Progress
 - **Current completed percentage:** ~98% (Code, backend endpoints, E2E AI connectivity, UI/UX cleanup, and packaging all complete and verified).
@@ -18,7 +18,7 @@
 - Initial repository setup and dependency installation (`npm run install:all`).
 - Backend test suite (`npm run test:backend`) completes successfully with 100% pass rate.
 - Frontend compilation (`npm run build:desktop`).
-- Windows desktop packaging script successfully built the `Abud OmniAgent Setup 0.1.0.exe` installer.
+- Windows desktop packaging script successfully built the `OmniAgent Setup 0.1.0.exe` installer.
 - **Provider Test Result:** PASSED
 - **End-to-End AI Status:** PASSED (Verified via `POST /agent/run` with a live response).
 - **Confirmed Base URL:** `http://127.0.0.1:1234/v1`
@@ -56,6 +56,6 @@ Since these checks require visual interactions, they are recorded as **Pending**
 - [ ] Paste approval flow requires explicit confirmation
 
 ## What You Should Do Next
-1. **Find and run the installer**: Double-click `apps/desktop/release/Abud OmniAgent Setup 0.1.0.exe` to install the desktop app.
-2. **Launch the App**: Open "Abud OmniAgent" from your Windows Start Menu.
+1. **Find and run the installer**: Double-click `apps/desktop/release/OmniAgent Setup 0.1.0.exe` to install the desktop app.
+2. **Launch the App**: Open "OmniAgent" from your Windows Start Menu.
 3. **Verify the UI**: Go through the remaining Manual GUI Checks within the application to confirm the full experience works as intended.

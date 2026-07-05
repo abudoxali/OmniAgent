@@ -1,4 +1,4 @@
-Write-Host 'Starting Abud OmniAgent development servers...' -ForegroundColor Cyan
+Write-Host 'Starting OmniAgent development servers...' -ForegroundColor Cyan
 Write-Host 'Backend: http://localhost:8000' -ForegroundColor Yellow
 Write-Host 'Desktop: Electron app' -ForegroundColor Yellow
 Write-Host ''

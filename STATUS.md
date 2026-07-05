@@ -1,4 +1,4 @@
-# Abud OmniAgent - STATUS
+# OmniAgent - STATUS
 
 ## Overall Progress
 Completed: The full **Post-Phase 3E Master Hardening** implementation pass is now complete at the code/build/package/safety level. Branding/icon assets, bilingual UI, local theme switching, in-app help, stronger Services clarity, safe tester utilities, README synchronization, and a follow-up terminal-style product redesign pass are implemented.
@@ -40,7 +40,7 @@ Post-Phase 3E Master Hardening - Branding, Bilingual UI, Theme, Help, Services C
      - Added a manual verification checklist UI with local-only checkmarks.
      - Added safe prompt starter templates that insert text only and never auto-run.
      - Added a read-only provider readiness score.
-     - Added “What Abud OmniAgent does” identity copy.
+     - Added “What OmniAgent does” identity copy.
      - Added an internal release-readiness panel.
   7. **Documentation honesty**
      - Updated `README.md` to reflect the new current phase, icon status, bilingual UI, theme preference, Help drawer, Services clarity, packaged backend behavior, manual LM Studio/Ollama separation, safety boundaries, and the still-pending human GUI bundle.
@@ -104,7 +104,7 @@ Post-Phase 3E Master Hardening - Branding, Bilingual UI, Theme, Help, Services C
   - `npm run build:desktop` -> **passed**
   - `npm run test:backend` -> **passed (78 tests)**
   - `npm run package:desktop` -> **passed**
-  - Packaged artifacts present under `apps/desktop/release/`, including `Abud OmniAgent Setup 0.1.0.exe`
+  - Packaged artifacts present under `apps/desktop/release/`, including `OmniAgent Setup 0.1.0.exe`
   - Build/package warnings remained non-blocking:
     - Vite CJS Node API deprecation warning
     - Electron signing skipped because no signing info is configured
@@ -154,7 +154,7 @@ Post-Phase 3E Master Hardening - Branding, Bilingual UI, Theme, Help, Services C
      - Shifted the primary renderer palette closer to true black + green terminal styling.
      - Added subtle grid/scanline atmosphere, stronger terminal-style chrome, greener accent treatment, and darker shell/cards.
   2. **Clearer product identity**
-     - Reworked the top-level product framing to present Abud OmniAgent as a `Local AI Terminal` instead of an ambiguous internal dashboard.
+     - Reworked the top-level product framing to present OmniAgent as a `Local AI Terminal` instead of an ambiguous internal dashboard.
      - Updated brand/subtitle/phase-shell copy so the product purpose reads more clearly from first glance.
   3. **Home page redesign**
      - Rebuilt the Home opening area with a stronger terminal hero, runtime-style session panel, explicit use-case cards, and a quick-start flow.
@@ -970,7 +970,7 @@ Post-Phase 3E Master Hardening - Branding, Bilingual UI, Theme, Help, Services C
   - no `npm run test:backend`, `npm run build:desktop`, or `npm run package:desktop` rerun was required in this pass because no packaging config or runtime code changed
 - Results:
   - installer artifacts are still present under `apps/desktop/release/`
-  - bundled backend artifact is still present at `apps/backend/dist/AbudOmniAgentBackend.exe`
+  - bundled backend artifact is still present at `apps/backend/dist/OmniAgentBackend.exe`
   - packaging config still points Windows build resources to `apps/desktop/build/`
   - no real icon asset is currently committed
   - interactive installer GUI flow and Start Menu launch behavior remain manual human QA remaining from this environment
@@ -982,7 +982,7 @@ Post-Phase 3E Master Hardening - Branding, Bilingual UI, Theme, Help, Services C
 ## Latest Self-Contained Runtime Update
 - Date: 2026-06-22
 - Feasibility decision: Option 1 is feasible on Windows in this project.
-- Approach chosen: bundle the Python backend as `AbudOmniAgentBackend.exe` with PyInstaller, include it in Electron `extraResources`, and let the packaged Electron app start and monitor only its own local backend process.
+- Approach chosen: bundle the Python backend as `OmniAgentBackend.exe` with PyInstaller, include it in Electron `extraResources`, and let the packaged Electron app start and monitor only its own local backend process.
 - Result: the packaged desktop app can start its own local backend automatically and pass `GET http://127.0.0.1:8000/health` without a separately started backend.
 - Files changed for this phase:
   - `package.json`
@@ -1004,12 +1004,12 @@ Post-Phase 3E Master Hardening - Branding, Bilingual UI, Theme, Help, Services C
   - `npm run build:desktop`
   - `npm run package:desktop`
   - artifact inspection for `apps/backend/dist/` and `apps/desktop/release/`
-  - packaged app startup check from `apps/desktop/release/win-unpacked/Abud OmniAgent.exe`
-  - installed app startup check from `C:\Users\Abud\AppData\Local\Programs\Abud OmniAgent\Abud OmniAgent.exe`
+  - packaged app startup check from `apps/desktop/release/win-unpacked/OmniAgent.exe`
+  - installed app startup check from `C:\Users\OmniAgent\AppData\Local\Programs\OmniAgent\OmniAgent.exe`
 - Results:
   - backend tests passed (`65` tests)
   - desktop build passed
-  - backend packaging passed and produced `apps/backend/dist/AbudOmniAgentBackend.exe`
+  - backend packaging passed and produced `apps/backend/dist/OmniAgentBackend.exe`
   - desktop packaging passed and included the bundled backend under `apps/desktop/release/win-unpacked/resources/backend/`
   - packaged app startup check passed: launching the packaged app with no external backend running brought up `/health` automatically
   - installed app startup check passed from the default current-user install path
@@ -1029,20 +1029,20 @@ Post-Phase 3E Master Hardening - Branding, Bilingual UI, Theme, Help, Services C
 - Result: packaged Windows desktop app is accepted for internal testing.
 - Installer/distribution QA was completed with a mix of artifact inspection and safe silent install/run/uninstall checks from this environment.
 - Artifacts found under `apps/desktop/release/`:
-  - `Abud OmniAgent Setup 0.1.0.exe`
-  - `Abud OmniAgent Setup 0.1.0.exe.blockmap`
+  - `OmniAgent Setup 0.1.0.exe`
+  - `OmniAgent Setup 0.1.0.exe.blockmap`
   - `builder-debug.yml`
-  - `win-unpacked/Abud OmniAgent.exe`
+  - `win-unpacked/OmniAgent.exe`
   - unpacked Electron runtime files, locales, `resources/app.asar`, and bundled backend resources under `resources/backend/`
 - Packaged artifact naming and location are correct for the current config:
-  - installer name: `Abud OmniAgent Setup 0.1.0.exe`
+  - installer name: `OmniAgent Setup 0.1.0.exe`
   - packaged output folder: `apps/desktop/release/`
-  - unpacked executable: `apps/desktop/release/win-unpacked/Abud OmniAgent.exe`
+  - unpacked executable: `apps/desktop/release/win-unpacked/OmniAgent.exe`
 - Installer QA completed:
   - default silent current-user install succeeded with exit code `0`
   - installed app launched successfully from installed location
-  - installed process name was `Abud OmniAgent`
-  - installed main window title was `عابد أومني أجنت`
+  - installed process name was `OmniAgent`
+  - installed main window title was ` أومني أجنت`
   - silent uninstall succeeded with exit code `0`
   - uninstall removed installed files but left the empty install directory behind; the empty directory was cleaned up manually during QA
   - one silent install attempt to a custom temporary directory via `/D=...` failed; the default current-user install path succeeded
@@ -1074,7 +1074,7 @@ Post-Phase 3E Master Hardening - Branding, Bilingual UI, Theme, Help, Services C
 - Backend startup: passed via `npm run dev:backend`; Uvicorn started successfully on `http://127.0.0.1:8000`.
 - Live backend health check: passed via `GET http://127.0.0.1:8000/health` -> `status: healthy`, `phase: Phase 2C - Overlay Target Capture + UX Reliability`.
 - Live context endpoint check: passed via `GET http://127.0.0.1:8000/context/current`; the backend returned safe context metadata successfully while running.
-- Desktop startup: passed via `npm run dev:desktop`; Vite dev server started on `http://localhost:5173/` and Electron launched with the main app window titled `عابد أومني أجنت`.
+- Desktop startup: passed via `npm run dev:desktop`; Vite dev server started on `http://localhost:5173/` and Electron launched with the main app window titled ` أومني أجنت`.
 - Live safety smoke checks: passed.
   - `POST /actions/preview` for `paste_text_approved` returned `requires_confirmation: true`.
   - `POST /actions/preview` for unsafe action type `run_shell_command` returned `allowed: false`.
@@ -1095,9 +1095,9 @@ Post-Phase 3E Master Hardening - Branding, Bilingual UI, Theme, Help, Services C
 ## What Was Done
 - Started one focused self-contained desktop runtime / backend bundling feasibility phase on top of the completed installer QA baseline.
 - Added `apps/backend/desktop_runtime.py` as the packaged backend entrypoint for a local FastAPI server.
-- Added `scripts/package-backend.ps1` to build `AbudOmniAgentBackend.exe` with PyInstaller.
+- Added `scripts/package-backend.ps1` to build `OmniAgentBackend.exe` with PyInstaller.
 - Updated the desktop packaging flow so `npm run package:desktop` first builds the backend executable, then packages the Electron app.
-- Updated Electron Builder config to include the bundled backend executable under `resources/backend/AbudOmniAgentBackend.exe`.
+- Updated Electron Builder config to include the bundled backend executable under `resources/backend/OmniAgentBackend.exe`.
 - Updated the Electron main process to:
   - detect whether a backend is already healthy,
   - start the bundled backend automatically on packaged builds,
@@ -1194,27 +1194,27 @@ Post-Phase 3E Master Hardening - Branding, Bilingual UI, Theme, Help, Services C
 - `npm run build:desktop`
 - `npm run package:desktop`
 - `Get-ChildItem -Recurse apps/desktop/release`
-- silent installer execution of `apps/desktop/release/Abud OmniAgent Setup 0.1.0.exe`
+- silent installer execution of `apps/desktop/release/OmniAgent Setup 0.1.0.exe`
 - installed app launch from the temporary install directory
-- silent uninstaller execution of `Uninstall Abud OmniAgent.exe`
-- packaged app launch from `apps/desktop/release/win-unpacked/Abud OmniAgent.exe`
+- silent uninstaller execution of `Uninstall OmniAgent.exe`
+- packaged app launch from `apps/desktop/release/win-unpacked/OmniAgent.exe`
 
 ## Tests / Checks
 - Self-contained runtime verification on `2026-06-22`: `npm run test:backend` -> passed (`65` tests)
 - Self-contained runtime verification on `2026-06-22`: `npm run build:desktop` -> passed
 - Self-contained runtime verification on `2026-06-22`: `npm run package:desktop` -> passed
-- Self-contained runtime verification on `2026-06-22`: `apps/backend/dist/AbudOmniAgentBackend.exe` -> created successfully
-- Self-contained runtime verification on `2026-06-22`: bundled backend executable included under `apps/desktop/release/win-unpacked/resources/backend/AbudOmniAgentBackend.exe`
-- Self-contained runtime verification on `2026-06-22`: launching `apps/desktop/release/win-unpacked/Abud OmniAgent.exe` with no external backend running -> passed; `/health` became available automatically
+- Self-contained runtime verification on `2026-06-22`: `apps/backend/dist/OmniAgentBackend.exe` -> created successfully
+- Self-contained runtime verification on `2026-06-22`: bundled backend executable included under `apps/desktop/release/win-unpacked/resources/backend/OmniAgentBackend.exe`
+- Self-contained runtime verification on `2026-06-22`: launching `apps/desktop/release/win-unpacked/OmniAgent.exe` with no external backend running -> passed; `/health` became available automatically
 - Self-contained runtime verification on `2026-06-22`: `/health` returned `phase: Self-Contained Desktop Runtime - Backend Bundling Feasibility`
-- Self-contained runtime verification on `2026-06-22`: installed app launch from `C:\Users\Abud\AppData\Local\Programs\Abud OmniAgent\Abud OmniAgent.exe` -> passed and auto-started the bundled backend
+- Self-contained runtime verification on `2026-06-22`: installed app launch from `C:\Users\OmniAgent\AppData\Local\Programs\OmniAgent\OmniAgent.exe` -> passed and auto-started the bundled backend
 - Self-contained runtime verification on `2026-06-22`: default silent current-user install -> passed (`ExitCode=0`)
 - Self-contained runtime verification on `2026-06-22`: default silent uninstall -> passed (`ExitCode=0`)
 - Self-contained runtime verification on `2026-06-22`: one silent install attempt to a custom temporary directory via `/D=...` failed, while the default current-user install path succeeded
 - Installer QA on `2026-06-22`: release artifacts were present under `apps/desktop/release/`
 - Installer QA on `2026-06-22`: silent installer execution -> passed (`ExitCode=0`)
 - Installer QA on `2026-06-22`: installed app launch from installed location -> passed
-- Installer QA on `2026-06-22`: installed app process/window naming -> passed (`Abud OmniAgent`, `عابد أومني أجنت`)
+- Installer QA on `2026-06-22`: installed app process/window naming -> passed (`OmniAgent`, ` أومني أجنت`)
 - Installer QA on `2026-06-22`: installed app backend connectivity check -> passed; current packaged runtime auto-starts the bundled backend for normal local use
 - Installer QA on `2026-06-22`: silent uninstall -> passed (`ExitCode=0`)
 - Installer QA on `2026-06-22`: interactive installer GUI pages and Start Menu launch path were not verified from this environment
@@ -1225,7 +1225,7 @@ Post-Phase 3E Master Hardening - Branding, Bilingual UI, Theme, Help, Services C
 - Release-readiness verification on `2026-06-22`: packaging used default Electron icon because no `apps/desktop/build/icon.ico` exists yet
 - Release-readiness verification on `2026-06-22`: packaging skipped signing because no signing information is configured; installer generation still succeeded
 - `apps/backend/.venv/Scripts/python.exe -m pytest apps/backend/tests` -> passed (`65` tests)
-- `npm --prefix apps/desktop run build` -> passed (no missing-author warning; product name "Abud OmniAgent")
+- `npm --prefix apps/desktop run build` -> passed (no missing-author warning; product name "OmniAgent")
 - `npm run health` -> passed (`Backend Status: HEALTHY`)
 - `GET /context/current` -> returned safe context metadata without crash when called rapidly and when the overlay window is foreground
 - `POST /actions/preview` with `target_hint` and target metadata -> returned and logged safe target metadata

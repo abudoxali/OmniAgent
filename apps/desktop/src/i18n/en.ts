@@ -9,10 +9,10 @@ type DeepPartial<T> = {
 }
 
 export const enOverrides: DeepPartial<Messages> = {
-  appTitle: 'Abud OmniAgent',
+  appTitle: 'OmniAgent',
   phaseBadge: 'Terminal Ops',
   brand: {
-    name: 'Abud OmniAgent',
+    name: 'OmniAgent',
     shortName: 'OmniAgent',
     subtitle: 'Local AI Terminal',
   },
@@ -72,7 +72,7 @@ export const enOverrides: DeepPartial<Messages> = {
     captureScreenshot: 'Screenshot',
     selectedInputTitle: 'Selected Input',
     selectedInputSubtitle: 'Paste text or open a small text file, then run Summary / Rewrite / Extract without any auto action.',
-    identityTitle: 'What is Abud OmniAgent for?',
+    identityTitle: 'What is OmniAgent for?',
     identityPoints: [
       'A local-first desktop assistant for text work: Summary, Rewrite, Explain, and task extraction.',
       'A local Workspace for notes, tasks, and manually saved AI results.',

@@ -1,1 +1,1 @@
-# Core module - Abud OmniAgent
+# Core module - OmniAgent

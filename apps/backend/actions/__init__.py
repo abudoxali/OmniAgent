@@ -1,1 +1,1 @@
-# Actions module - Abud OmniAgent
+# Actions module - OmniAgent

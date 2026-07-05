@@ -46,7 +46,7 @@ def capture_screenshot_metadata() -> dict:
             suffix = f".{settings.screenshot_format.lower()}"
             temp_path = os.path.join(
                 tempfile.gettempdir(),
-                f"abud-omniagent-{uuid.uuid4().hex}{suffix}",
+                f"omniagent-{uuid.uuid4().hex}{suffix}",
             )
             image.save(temp_path, format=settings.screenshot_format.upper())
 

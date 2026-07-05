@@ -42,7 +42,7 @@ try {
         --noconfirm `
         --clean `
         --onefile `
-        --name AbudOmniAgentBackend `
+        --name OmniAgentBackend `
         --distpath $distDir `
         --workpath $workDir `
         --specpath $specDir `
@@ -53,7 +53,7 @@ try {
         --hidden-import uvicorn.lifespan.on `
         desktop_runtime.py
 
-    $backendExe = Join-Path $distDir 'AbudOmniAgentBackend.exe'
+    $backendExe = Join-Path $distDir 'OmniAgentBackend.exe'
     if (-not (Test-Path $backendExe)) {
         throw "Bundled backend executable was not created at $backendExe."
     }

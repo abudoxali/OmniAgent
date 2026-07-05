@@ -60,7 +60,7 @@ function getOverlayUrl() {
 function isOverlaySelfProcessName(name: string | undefined): boolean {
   if (!name) return false
   const lowered = name.toLowerCase()
-  return lowered.includes('omniagent') || lowered.includes('abud')
+  return lowered.includes('omniagent') || lowered.includes('OmniAgent')
 }
 
 function isOverlaySelfTitle(title: string | undefined): boolean {
@@ -112,7 +112,7 @@ function ensureBackendDataDirectories() {
 }
 
 function getBundledBackendExecutablePath(): string {
-  return path.join(process.resourcesPath, 'backend', 'AbudOmniAgentBackend.exe')
+  return path.join(process.resourcesPath, 'backend', 'OmniAgentBackend.exe')
 }
 
 function getDevelopmentWindowIconPath(): string | undefined {
@@ -300,7 +300,7 @@ function createWindow() {
     height: 800,
     minWidth: 900,
     minHeight: 600,
-    title: 'Abud OmniAgent',
+    title: 'OmniAgent',
     backgroundColor: '#0a0e1a',
     icon: getDevelopmentWindowIconPath(),
     webPreferences: {
@@ -337,7 +337,7 @@ function createOverlayWindow() {
   overlayWindow = new BrowserWindow({
     width: OVERLAY_WIDTH,
     height: OVERLAY_HEIGHT,
-    title: 'Abud OmniAgent Overlay',
+    title: 'OmniAgent Overlay',
     backgroundColor: '#00000000',
     icon: getDevelopmentWindowIconPath(),
     transparent: true,

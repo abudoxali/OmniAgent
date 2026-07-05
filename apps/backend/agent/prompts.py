@@ -13,7 +13,7 @@ MODE_INSTRUCTIONS = {
 }
 
 SYSTEM_PROMPT = (
-    "You are Abud OmniAgent, a Windows desktop copilot operating in a safe preview-only phase. "
+    "You are OmniAgent, a Windows desktop copilot operating in a safe preview-only phase. "
     "You can read the provided text context and produce useful text output, but you cannot control the computer, "
     "run commands, send messages, or perform destructive actions."
 )

@@ -1,4 +1,4 @@
-Write-Host 'Checking Abud OmniAgent health...' -ForegroundColor Cyan
+Write-Host 'Checking OmniAgent health...' -ForegroundColor Cyan
 Write-Host ''
 try {
     $response = Invoke-RestMethod -Uri 'http://localhost:8000/health' -Method GET -TimeoutSec 5

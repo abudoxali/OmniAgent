@@ -1,10 +1,10 @@
 export const ar = {
-  appTitle: 'عابد أومني أجنت',
+  appTitle: ' أومني أجنت',
   phaseBadge: 'مساحة العمل المحلية',
   brand: {
-    name: 'عابد أومني أجنت',
+    name: ' أومني أجنت',
     shortName: 'أومني أجنت',
-    subtitle: 'من عابد',
+    subtitle: 'من ',
   },
   nav: {
     home: 'الرئيسية',
@@ -391,7 +391,7 @@ export const ar = {
     startupStep2: '2) اختر/حمّل النموذج المطلوب.',
     startupStep3: '3) شغّل Local Server من داخل LM Studio.',
     startupStep4: '4) تأكد أن العنوان هو http://127.0.0.1:1234/v1.',
-    startupStep5: '5) افتح إعدادات Abud OmniAgent.',
+    startupStep5: '5) افتح إعدادات OmniAgent.',
     startupStep6: '6) اختر LM Studio كنشط.',
     startupStep7: '7) اضغط "اختبار المزود".',
     startupStep8: '8) بعد نجاح الاختبار، استخدم الملحن في الصفحة الرئيسية.',

@@ -1,8 +1,8 @@
 {
-  "name": "abud-omniagent-desktop",
+  "name": "omniagent-desktop",
   "version": "0.1.0",
-  "description": "Abud OmniAgent Desktop - Arabic AI Desktop Assistant",
-  "author": "Abud OmniAgent",
+  "description": "OmniAgent Desktop - Arabic AI Desktop Assistant",
+  "author": "OmniAgent",
   "main": "dist-electron/main.js",
   "scripts": {
     "dev": "vite",
@@ -17,8 +17,8 @@
     "react-router-dom": "^6.26.0"
   },
   "build": {
-    "productName": "Abud OmniAgent",
-    "appId": "com.abud.omniagent.desktop",
+    "productName": "OmniAgent",
+    "appId": "com.OmniAgent.omniagent.desktop",
     "artifactName": "${productName} Setup ${version}.${ext}",
     "asar": true,
     "npmRebuild": false,
@@ -33,8 +33,8 @@
     ],
     "extraResources": [
       {
-        "from": "../backend/dist/AbudOmniAgentBackend.exe",
-        "to": "backend/AbudOmniAgentBackend.exe"
+        "from": "../backend/dist/OmniAgentBackend.exe",
+        "to": "backend/OmniAgentBackend.exe"
       }
     ],
     "win": {

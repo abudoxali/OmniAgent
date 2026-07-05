@@ -2,10 +2,10 @@ import { ar as baseAr } from './ar'
 
 export const arMessages = {
   ...baseAr,
-  appTitle: 'Abud OmniAgent',
+  appTitle: 'OmniAgent',
   phaseBadge: 'Terminal Ops',
   brand: {
-    name: 'Abud OmniAgent',
+    name: 'OmniAgent',
     shortName: 'OmniAgent',
     subtitle: 'Local AI Terminal',
   },
@@ -178,7 +178,7 @@ export const arMessages = {
     resultTitle: 'Result / النتيجة',
     selectedInputTitle: 'Selected Input / إدخال محدد',
     selectedInputSubtitle: 'Paste text أو افتح file نصي صغير، ثم اعمل Summary / Rewrite / Extract بدون أي auto action.',
-    identityTitle: 'Abud OmniAgent بيستخدم في إيه؟',
+    identityTitle: 'OmniAgent بيستخدم في إيه؟',
     identityPoints: [
       'Local-first desktop assistant للـ text work: Summary, Rewrite, Explain, Extract tasks.',
       'Workspace محلي لحفظ notes, tasks, و AI results بشكل يدوي.',

@@ -1,4 +1,4 @@
-# Abud OmniAgent - Architecture
+# OmniAgent - Architecture
 
 Version: `0.1.0`
 Updated: `2026-06-22`
@@ -8,7 +8,7 @@ Phase 1G was validated end-to-end using LM Studio with the model `google/gemma-4
 
 ## System Shape
 
-Abud OmniAgent uses a two-process local architecture:
+OmniAgent uses a two-process local architecture:
 
 ```text
 Desktop App (Electron + React + TypeScript)

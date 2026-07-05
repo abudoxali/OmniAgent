@@ -67,7 +67,7 @@ function isOverlaySelfCapture(context: OverlayTargetContext | null): boolean {
   if (!context) return false
   const name = (context.active_process_name || '').toLowerCase()
   const title = (context.active_window_title || '').toLowerCase()
-  return name.includes('omniagent') || name.includes('abud') || title.includes('omniagent') || title.includes('overlay')
+  return name.includes('omniagent') || name.includes('OmniAgent') || title.includes('omniagent') || title.includes('overlay')
 }
 
 function OverlayPage() {

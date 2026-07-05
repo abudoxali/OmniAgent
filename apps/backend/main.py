@@ -1,4 +1,4 @@
-"""Abud OmniAgent Backend - Phase 0 FastAPI Application."""
+"""OmniAgent Backend - Phase 0 FastAPI Application."""
 from contextlib import asynccontextmanager
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
@@ -22,7 +22,7 @@ async def lifespan(app: FastAPI):
 
 
 app = FastAPI(
-    title="Abud OmniAgent Backend",
+    title="OmniAgent Backend",
     version=settings.VERSION,
     lifespan=lifespan,
 )
