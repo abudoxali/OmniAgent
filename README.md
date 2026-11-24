@@ -1,3 +1,5 @@
+<p align="center"><img src="assets/app-icon.webp" alt="OmniAgent icon" width="160"></p>
+
 # OmniAgent
 
 **OmniAgent** is a Windows-first, privacy-focused desktop AI assistant built with Electron, React, TypeScript, and a local Python FastAPI backend. It provides a system-wide AI overlay that securely integrates with your local LLMs (like LM Studio or Ollama) to assist you across any application.
@@ -14,19 +16,9 @@ OmniAgent is completely local-first. It processes your screen context, clipboard
 - **Bilingual Interface**: Full Arabic and English support with dynamic RTL/LTR layouts.
 - **Built-in Workspace**: A local workspace to save your favorite AI generations, notes, and tasks.
 
-## 🚀 Quick Start (Installation)
+## 🚀 Quick Start (Development & Usage)
 
-The easiest way to use OmniAgent is to download the pre-packaged Windows installer.
-
-1. Locate the latest release in `apps/desktop/release/OmniAgent Setup 0.1.0.exe`.
-2. Double-click the installer to install the application.
-3. Launch **OmniAgent** from your Windows Start Menu.
-4. **Setup Provider**: Open Settings inside the app, select your preferred provider (e.g., LM Studio), and enter the local server URL (e.g., `http://127.0.0.1:1234/v1`).
-5. Run a quick test prompt to verify connectivity!
-
-## 🛠️ For Developers: Building from Source
-
-OmniAgent's architecture consists of a React/Electron frontend and a Python FastAPI backend.
+OmniAgent is primarily designed to be run locally via the terminal during development and daily use.
 
 ### Prerequisites
 - Node.js 18+
@@ -42,23 +34,25 @@ Clone the repository and install all dependencies:
 npm run install:all
 ```
 
-### Running Locally
+### Running the App
 
-To start the development servers for both the frontend and the backend:
+To start OmniAgent locally (this launches the backend server and opens the Electron desktop app directly):
 
 ```powershell
-npm run dev
+npm run app
 ```
 
-Alternatively, run them separately:
+### Verifying the Setup
+
+To ensure your local backend, provider configurations (like LM Studio), and UI are working correctly, run the built-in QA script:
+
 ```powershell
-npm run dev:backend
-npm run dev:desktop
+npm run qa
 ```
 
-### Building the Release
+## 📦 Optional: Building a Release
 
-To generate the final `.exe` installer for Windows:
+If you want to generate a standalone `.exe` installer for Windows (e.g., to share with others or install permanently without using the terminal), you can package the app:
 
 ```powershell
 # Compiles the React frontend
