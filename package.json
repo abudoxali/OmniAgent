@@ -4,6 +4,12 @@
   "scripts": {
     "install:all": "npm install --include=dev && powershell -ExecutionPolicy Bypass -File scripts/install-backend.ps1 && powershell -ExecutionPolicy Bypass -File scripts/install-desktop.ps1",
     "dev": "concurrently --names backend,desktop --prefix-colors blue,green \"npm run dev:backend\" \"npm run dev:desktop\"",
+    "app": "concurrently --names backend,desktop --prefix-colors blue,green \"npm run app:backend\" \"npm run app:desktop\"",
+    "app:dev": "npm run app",
+    "app:backend": "npm run dev:backend",
+    "app:desktop": "npm run dev:desktop",
+    "app:check": "powershell -ExecutionPolicy Bypass -File scripts/health-check.ps1",
+    "qa": "npm run test:backend && npm run build:desktop && npm run app:check && powershell -ExecutionPolicy Bypass -File scripts/qa-test.ps1",
     "test:backend": "apps\\backend\\.venv\\Scripts\\python.exe -m pytest apps/backend/tests",
     "package:backend": "powershell -ExecutionPolicy Bypass -File scripts/package-backend.ps1",
     "build:desktop": "npm --prefix apps/desktop run build",

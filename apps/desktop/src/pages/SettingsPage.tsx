@@ -410,95 +410,7 @@ function SettingsPage() {
         </button>
       </div>
 
-      {settings.active_provider && activeTab === 'basic' ? (
-        <div className={`settings-readiness-banner ${activeProvider?.diagnostic_status === 'online' ? 'ready' : activeProvider?.diagnostic_status === 'missing_server' || activeProvider?.diagnostic_status === 'offline' ? 'offline' : activeProvider?.diagnostic_status === 'bad_model' || activeProvider?.diagnostic_status === 'no_model_loaded' ? 'warning' : 'not-configured'}`}>
-          <div className="settings-readiness-item">
-            <span className="settings-readiness-label">{messages.settings.activeProviderDisplay}</span>
-            <span className="settings-readiness-value">
-              {language === 'ar'
-                ? activeProvider?.display_name_ar || activeProvider?.display_name || translateProviderLabel(activeProvider?.label || settings.active_provider, language)
-                : activeProvider?.display_name || activeProvider?.display_name_ar || translateProviderLabel(activeProvider?.label || settings.active_provider, language)}
-            </span>
-          </div>
-          <div className="settings-readiness-item">
-            <span className="settings-readiness-label">{messages.settings.activeModelDisplay}</span>
-            <span className="settings-readiness-value ltr-code">{settings.active_model || messages.settings.noModelConfigured}</span>
-          </div>
-          <div className="settings-readiness-item">
-            <span className="settings-readiness-label">
-              {lastTestResult?.status === 'ok' ? messages.settings.lastTestSuccess : lastTestResult?.status ? messages.settings.lastTestFailed : messages.settings.testProviderBeforeHome}
-            </span>
-            <span className="settings-readiness-value">
-              {lastTestResult?.status === 'ok'
-                ? messages.settings.providerReady
-                : activeProvider?.diagnostic_status === 'missing_server'
-                  ? messages.settings.providerOffline
-                  : activeProvider?.diagnostic_status === 'no_model_loaded'
-                    ? messages.settings.providerModelNotLoaded
-                    : activeProvider?.diagnostic_status === 'bad_model'
-                      ? translateStatus('bad_model', language)
-                      : messages.settings.testProviderBeforeHome}
-            </span>
-          </div>
-          {activeProviderLastTest ? (
-            <div className="settings-readiness-item settings-readiness-last-test">
-              <span className="settings-readiness-label">{messages.settings.lastTestResult}</span>
-              <span className={`provider-last-test-status provider-last-test-status-${readinessLastTestStatusClass}`}>{readinessLastTestLabel}</span>
-              {activeProviderLastTest.message ? <p className="plaintext provider-last-test-message">{activeProviderLastTest.message}</p> : null}
-              {(readinessLastTestTime || typeof activeProviderLastTest.latency_ms === 'number') ? (
-                <div className="provider-last-test-meta">
-                  {readinessLastTestTime ? (
-                    <span>{messages.settings.lastTestedAt}: <span className="ltr-code">{readinessLastTestTime}</span></span>
-                  ) : null}
-                  {typeof activeProviderLastTest.latency_ms === 'number' ? (
-                    <span>{messages.settings.latency}: <span className="ltr-code">{activeProviderLastTest.latency_ms} ms</span></span>
-                  ) : null}
-                </div>
-              ) : null}
-            </div>
-          ) : null}
-          {activeProvider?.diagnostic_message ? (
-            <div className="settings-readiness-guidance">
-              <p className="plaintext">{activeProvider.diagnostic_message}</p>
-              {activeProvider.diagnostic_action && activeProvider.diagnostic_action !== 'لا يوجد إجراء مطلوب الآن.' ? (
-                <p className="settings-readiness-action">
-                  <span>{messages.provider.nextStep}</span>
-                  <span>{activeProvider.diagnostic_action}</span>
-                </p>
-              ) : null}
-            </div>
-          ) : null}
-          <ProviderGuidancePanel guidance={activeProvider?.guidance} variant="compact" className="settings-guidance-inline" />
-        </div>
-      ) : null}
-
       <div className="settings-grid">
-        <div className="card settings-provider-span">
-          <div className="settings-provider-header">
-            <div>
-              <h3 className="card-title">{messages.settings.providerSelectionTitle}</h3>
-              <p className="card-description">{messages.settings.providerSelectionDescription}</p>
-            </div>
-            <button className="btn btn-secondary" onClick={() => void Promise.all([loadProviders(), loadDiagnostics()])} type="button" disabled={isLoadingProviders}>
-              {isLoadingProviders ? messages.settings.refreshingProviders : messages.settings.refreshProviders}
-            </button>
-          </div>
-          <ProviderSelector
-            providers={providers}
-            selectedProviderId={selectedProvider?.id || selectedProviderId}
-            isLoading={isLoadingProviders}
-            onSelect={(providerId) => {
-              if (isProviderId(providerId)) {
-                setSelectedProviderId(providerId)
-              }
-            }}
-          />
-        </div>
-
-        {activeTab === 'advanced' && (
-          <ProviderReadinessMatrix provider={selectedProvider} />
-        )}
-
         <div className="card settings-provider-span" hidden={activeTab !== 'basic'}>
           <h3 className="card-title">{messages.settings.saveSettingsTitle}</h3>
           <p className="card-description">{messages.settings.saveSettingsDescription}</p>
@@ -579,7 +491,11 @@ function SettingsPage() {
               {isSavingSettings ? messages.settings.savingSettings : messages.settings.saveSettings}
             </button>
           </div>
-          <p className="card-description settings-inline-note">{messages.settings.secretsNote}</p>
+          <p className="card-description settings-inline-note" style={{ marginTop: '16px', color: 'var(--text-secondary)' }}>
+            {language === 'ar' 
+              ? 'ملاحظة: إذا لم يظهر النموذج الخاص بك أو إذا كنت بحاجة لتغيير منفذ (Port) LM Studio، يرجى الانتقال إلى قسم (Advanced Diagnostics) في الأعلى.' 
+              : 'Note: If your model is not showing or you need to change the LM Studio Port, please open the Advanced Diagnostics tab above.'}
+          </p>
         </div>
 
         <div className="card" hidden={activeTab !== 'basic'}>
@@ -629,7 +545,96 @@ function SettingsPage() {
           <p className="card-description settings-inline-note">{messages.settings.appearanceApplied}</p>
         </div>
 
-        <div className="card" hidden={activeTab !== 'basic'}>
+        {/* ADVANCED DIAGNOSTICS TAB */}
+        {settings.active_provider && activeTab === 'advanced' ? (
+          <div className={`settings-readiness-banner settings-provider-span ${activeProvider?.diagnostic_status === 'online' ? 'ready' : activeProvider?.diagnostic_status === 'missing_server' || activeProvider?.diagnostic_status === 'offline' ? 'offline' : activeProvider?.diagnostic_status === 'bad_model' || activeProvider?.diagnostic_status === 'no_model_loaded' ? 'warning' : 'not-configured'}`}>
+            <div className="settings-readiness-item">
+              <span className="settings-readiness-label">{messages.settings.activeProviderDisplay}</span>
+              <span className="settings-readiness-value">
+                {language === 'ar'
+                  ? activeProvider?.display_name_ar || activeProvider?.display_name || translateProviderLabel(activeProvider?.label || settings.active_provider, language)
+                  : activeProvider?.display_name || activeProvider?.display_name_ar || translateProviderLabel(activeProvider?.label || settings.active_provider, language)}
+              </span>
+            </div>
+            <div className="settings-readiness-item">
+              <span className="settings-readiness-label">{messages.settings.activeModelDisplay}</span>
+              <span className="settings-readiness-value ltr-code">{settings.active_model || messages.settings.noModelConfigured}</span>
+            </div>
+            <div className="settings-readiness-item">
+              <span className="settings-readiness-label">
+                {lastTestResult?.status === 'ok' ? messages.settings.lastTestSuccess : lastTestResult?.status ? messages.settings.lastTestFailed : messages.settings.testProviderBeforeHome}
+              </span>
+              <span className="settings-readiness-value">
+                {lastTestResult?.status === 'ok'
+                  ? messages.settings.providerReady
+                  : activeProvider?.diagnostic_status === 'missing_server'
+                    ? messages.settings.providerOffline
+                    : activeProvider?.diagnostic_status === 'no_model_loaded'
+                      ? messages.settings.providerModelNotLoaded
+                      : activeProvider?.diagnostic_status === 'bad_model'
+                        ? translateStatus('bad_model', language)
+                        : messages.settings.testProviderBeforeHome}
+              </span>
+            </div>
+            {activeProviderLastTest ? (
+              <div className="settings-readiness-item settings-readiness-last-test">
+                <span className="settings-readiness-label">{messages.settings.lastTestResult}</span>
+                <span className={`provider-last-test-status provider-last-test-status-${readinessLastTestStatusClass}`}>{readinessLastTestLabel}</span>
+                {activeProviderLastTest.message ? <p className="plaintext provider-last-test-message">{activeProviderLastTest.message}</p> : null}
+                {(readinessLastTestTime || typeof activeProviderLastTest.latency_ms === 'number') ? (
+                  <div className="provider-last-test-meta">
+                    {readinessLastTestTime ? (
+                      <span>{messages.settings.lastTestedAt}: <span className="ltr-code">{readinessLastTestTime}</span></span>
+                    ) : null}
+                    {typeof activeProviderLastTest.latency_ms === 'number' ? (
+                      <span>{messages.settings.latency}: <span className="ltr-code">{activeProviderLastTest.latency_ms} ms</span></span>
+                    ) : null}
+                  </div>
+                ) : null}
+              </div>
+            ) : null}
+            {activeProvider?.diagnostic_message ? (
+              <div className="settings-readiness-guidance">
+                <p className="plaintext">{activeProvider.diagnostic_message}</p>
+                {activeProvider.diagnostic_action && activeProvider.diagnostic_action !== 'لا يوجد إجراء مطلوب الآن.' ? (
+                  <p className="settings-readiness-action">
+                    <span>{messages.provider.nextStep}</span>
+                    <span>{activeProvider.diagnostic_action}</span>
+                  </p>
+                ) : null}
+              </div>
+            ) : null}
+            <ProviderGuidancePanel guidance={activeProvider?.guidance} variant="compact" className="settings-guidance-inline" />
+          </div>
+        ) : null}
+
+        <div className="card settings-provider-span" hidden={activeTab !== 'advanced'}>
+          <div className="settings-provider-header">
+            <div>
+              <h3 className="card-title">{messages.settings.providerSelectionTitle}</h3>
+              <p className="card-description">{messages.settings.providerSelectionDescription}</p>
+            </div>
+            <button className="btn btn-secondary" onClick={() => void Promise.all([loadProviders(), loadDiagnostics()])} type="button" disabled={isLoadingProviders}>
+              {isLoadingProviders ? messages.settings.refreshingProviders : messages.settings.refreshProviders}
+            </button>
+          </div>
+          <ProviderSelector
+            providers={providers}
+            selectedProviderId={selectedProvider?.id || selectedProviderId}
+            isLoading={isLoadingProviders}
+            onSelect={(providerId) => {
+              if (isProviderId(providerId)) {
+                setSelectedProviderId(providerId)
+              }
+            }}
+          />
+        </div>
+
+        {activeTab === 'advanced' && (
+          <ProviderReadinessMatrix provider={selectedProvider} />
+        )}
+
+        <div className="card" hidden={activeTab !== 'advanced'}>
           <h3 className="card-title">{messages.settings.providerConfigTitle}</h3>
           <p className="card-description">{messages.settings.providerConfigDescription}</p>
           <div className="settings-provider-config-grid">
@@ -739,7 +744,7 @@ function SettingsPage() {
           )}
         </div>
 
-        <div className="card" hidden={activeTab !== 'basic'}>
+        <div className="card" hidden={activeTab !== 'advanced'}>
           <h3 className="card-title">{messages.settings.startupGuideTitle}</h3>
           <p className="card-description">{messages.settings.startupGuideDescription}</p>
           <div className="settings-guidance-panel">
@@ -754,7 +759,7 @@ function SettingsPage() {
           </div>
         </div>
 
-        <div className="card" hidden={activeTab !== 'basic'}>
+        <div className="card" hidden={activeTab !== 'advanced'}>
           <h3 className="card-title">{messages.settings.guidanceTitle}</h3>
           <p className="card-description">{messages.settings.guidanceDescription}</p>
           <div className="settings-guidance-panel">

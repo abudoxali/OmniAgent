@@ -494,6 +494,9 @@ const ActionButtons = forwardRef<ActionButtonsHandle, ActionButtonsProps>(functi
         </div>
         <label className="ai-field">
           <span className="ai-label">{messages.actions.instruction}</span>
+          <span className="ai-help-text" style={{ fontSize: '0.85em', color: 'var(--text-secondary)', marginBottom: '8px', display: 'block' }}>
+            {language === 'ar' ? 'اكتب هنا ما تريد من الذكاء الاصطناعي أن يفعله بالسياق الحالي...' : 'Type what you want the AI to do with the current context...'}
+          </span>
           <textarea
             className="ai-textarea plaintext"
             placeholder={messages.actions.instructionPlaceholder}
